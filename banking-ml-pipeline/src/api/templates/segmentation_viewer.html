@@ -1,0 +1,403 @@
+<!-- src/api/templates/segmentation_viewer.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Segmentation Analysis - Notebook View</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .notebook-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .notebook-header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .notebook-cell {
+            border-bottom: 1px solid #e0e0e0;
+            padding: 20px;
+        }
+        
+        .cell-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            border-left: 4px solid #4CAF50;
+            padding-left: 10px;
+        }
+        
+        .code-block {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            padding: 15px;
+            margin: 10px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            overflow-x: auto;
+        }
+        
+        .output-block {
+            background-color: #ffffff;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            padding: 15px;
+            margin: 10px 0;
+        }
+        
+        .plot-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .plot-container img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        .metrics-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        .metrics-table th,
+        .metrics-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        .metrics-table th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        .metrics-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .tab-container {
+            margin: 20px 0;
+        }
+        
+        .tab-buttons {
+            display: flex;
+            border-bottom: 2px solid #ddd;
+        }
+        
+        .tab-button {
+            padding: 10px 20px;
+            background-color: #f1f1f1;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 16px;
+        }
+        
+        .tab-button:hover {
+            background-color: #ddd;
+        }
+        
+        .tab-button.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        .tab-content {
+            display: none;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 0 0 4px 4px;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .navigation {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .nav-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .nav-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div class="notebook-container">
+        <div class="notebook-header">
+            <h1>Customer Segmentation Analysis</h1>
+            <p>Banking ML Pipeline - Notebook-style Viewer</p>
+        </div>
+        
+        <!-- Cell 1: Import and Setup -->
+        <div class="notebook-cell">
+            <div class="cell-title">1. Import Libraries and Load Data</div>
+            <div class="code-block">
+# Import required libraries
+import numpy as np
+import pandas as pd
+from sklearn.cluster import KMeans
+from sklearn.preprocessing import StandardScaler
+import matplotlib.pyplot as plt
+
+# Load the pipeline
+pipeline = IntegratedBankingPipeline()
+pipeline.load_pipeline('models/')
+
+# Get segmentation results
+n_clusters = {{ n_clusters }}
+n_customers = {{ n_customers }}
+            </div>
+            <div class="output-block">
+                <p>✅ Pipeline loaded successfully</p>
+                <p>📊 Dataset: {{ n_customers }} customers</p>
+                <p>🎯 Optimal clusters: {{ n_clusters }}</p>
+            </div>
+        </div>
+        
+        <!-- Cell 2: Segmentation Metrics -->
+        <div class="notebook-cell">
+            <div class="cell-title">2. Segmentation Quality Metrics</div>
+            <div class="code-block">
+# Evaluate clustering quality
+silhouette_score = {{ silhouette_score }}
+davies_bouldin_score = {{ davies_bouldin_score }}
+stability_score = {{ stability_score }}
+
+print(f"Silhouette Score: {silhouette_score:.3f}")
+print(f"Davies-Bouldin Score: {davies_bouldin_score:.3f}")
+print(f"Stability Score: {stability_score:.1f}%")
+            </div>
+            <div class="output-block">
+                <table class="metrics-table">
+                    <tr>
+                        <th>Metric</th>
+                        <th>Value</th>
+                        <th>Interpretation</th>
+                    </tr>
+                    <tr>
+                        <td>Silhouette Score</td>
+                        <td>{{ silhouette_score }}</td>
+                        <td>Good cluster separation (>0.4)</td>
+                    </tr>
+                    <tr>
+                        <td>Davies-Bouldin Score</td>
+                        <td>{{ davies_bouldin_score }}</td>
+                        <td>Lower is better</td>
+                    </tr>
+                    <tr>
+                        <td>Stability Score</td>
+                        <td>{{ stability_score }}%</td>
+                        <td>High stability across bootstraps</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        <!-- Cell 3: Visualizations -->
+        <div class="notebook-cell">
+            <div class="cell-title">3. Customer Segment Visualizations</div>
+            
+            <div class="tab-container">
+                <div class="tab-buttons">
+                    <button class="tab-button active" onclick="showTab('pca')">PCA Visualization</button>
+                    <button class="tab-button" onclick="showTab('distribution')">Distribution</button>
+                    <button class="tab-button" onclick="showTab('profiles')">Profiles</button>
+                    <button class="tab-button" onclick="showTab('radar')">Radar Chart</button>
+                </div>
+                
+                <div id="pca" class="tab-content active">
+                    <div class="code-block">
+# Reduce dimensions using PCA for visualization
+pca = PCA(n_components=2)
+X_pca = pca.fit_transform(X_scaled)
+
+# Plot clusters
+plt.figure(figsize=(10, 8))
+for i in range(n_clusters):
+    mask = cluster_labels == i
+    plt.scatter(X_pca[mask, 0], X_pca[mask, 1], 
+                label=f'Cluster {i}', alpha=0.6)
+plt.xlabel('First Principal Component')
+plt.ylabel('Second Principal Component')
+plt.title('Customer Segments Visualization (PCA)')
+plt.legend()
+plt.show()
+                    </div>
+                    <div class="plot-container">
+                        <img src="/visualizations/segments/pca" alt="PCA Visualization">
+                    </div>
+                </div>
+                
+                <div id="distribution" class="tab-content">
+                    <div class="code-block">
+# Segment size distribution
+segment_counts = pd.Series(cluster_labels).value_counts().sort_index()
+segment_counts.plot(kind='bar')
+plt.xlabel('Segment')
+plt.ylabel('Number of Customers')
+plt.title('Segment Size Distribution')
+plt.show()
+                    </div>
+                    <div class="plot-container">
+                        <img src="/visualizations/segments/distribution" alt="Distribution Chart">
+                    </div>
+                </div>
+                
+                <div id="profiles" class="tab-content">
+                    <div class="code-block">
+# Create segment profiles heatmap
+segment_profiles = create_segment_profiles(data, cluster_labels)
+plt.figure(figsize=(12, 8))
+sns.heatmap(segment_profiles_normalized, annot=True, cmap='RdYlBu_r')
+plt.title('Segment Profile Comparison')
+plt.show()
+                    </div>
+                    <div class="plot-container">
+                        <img src="/visualizations/segments/profiles" alt="Profiles Heatmap">
+                    </div>
+                </div>
+                
+                <div id="radar" class="tab-content">
+                    <div class="code-block">
+# Radar chart for segment comparison
+features = ['Income', 'Credit Score', 'Balance', 'Products', 'Risk']
+create_radar_chart(segment_profiles, features)
+plt.title('Segment Comparison - Radar Chart')
+plt.show()
+                    </div>
+                    <div class="plot-container">
+                        <img src="/visualizations/segments/radar" alt="Radar Chart">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Cell 4: Segment Profiles -->
+        <div class="notebook-cell">
+            <div class="cell-title">4. Detailed Segment Profiles</div>
+            <div class="code-block">
+# Generate detailed profiles for each segment
+for segment in range(n_clusters):
+    segment_data = data[cluster_labels == segment]
+    print(f"\n=== Segment {segment} ===")
+    print(f"Size: {len(segment_data)} ({len(segment_data)/len(data)*100:.1f}%)")
+    print(f"Avg Income: ${segment_data['income'].mean():,.0f}")
+    print(f"Avg Credit Score: {segment_data['credit_score'].mean():.0f}")
+    print(f"Avg Balance: ${segment_data['avg_balance'].mean():,.0f}")
+            </div>
+            <div class="output-block">
+                <div id="segment-profiles"></div>
+            </div>
+        </div>
+        
+        <!-- Cell 5: Business Recommendations -->
+        <div class="notebook-cell">
+            <div class="cell-title">5. Business Recommendations</div>
+            <div class="output-block">
+                <div id="recommendations"></div>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <a href="/" class="nav-button">← Back to API Home</a>
+            <a href="/visualizations/segments/dashboard" class="nav-button">Interactive Dashboard →</a>
+        </div>
+    </div>
+    
+    <script>
+        function showTab(tabName) {
+            var tabs = document.getElementsByClassName('tab-content');
+            var buttons = document.getElementsByClassName('tab-button');
+            
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].classList.remove('active');
+            }
+            
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].classList.remove('active');
+            }
+            
+            document.getElementById(tabName).classList.add('active');
+            event.target.classList.add('active');
+        }
+        
+        // Load segment profiles dynamically
+        fetch('/segments')
+            .then(response => response.json())
+            .then(data => {
+                if (data.segments) {
+                    let profilesHtml = '<table class="metrics-table">';
+                    profilesHtml += '<tr><th>Segment</th><th>Size</th><th>Percentage</th><th>Avg Income</th><th>Avg Credit Score</th></tr>';
+                    
+                    data.segments.forEach(segment => {
+                        profilesHtml += `<tr>
+                            <td>Segment ${segment.segment_id}</td>
+                            <td>${segment.size}</td>
+                            <td>${segment.percentage.toFixed(1)}%</td>
+                            <td>${(segment.income_mean || 0).toFixed(0)}</td>
+                            <td>${(segment.credit_score_mean || 0).toFixed(0)}</td>
+                        </tr>`;
+                    });
+                    
+                    profilesHtml += '</table>';
+                    document.getElementById('segment-profiles').innerHTML = profilesHtml;
+                    
+                    // Generate recommendations
+                    let recsHtml = '<ul>';
+                    data.segments.forEach(segment => {
+                        recsHtml += `<li><strong>Segment ${segment.segment_id}:</strong> `;
+                        
+                        if (segment.credit_score_mean > 750) {
+                            recsHtml += 'Premium services, higher credit limits, investment products';
+                        } else if (segment.credit_score_mean < 600) {
+                            recsHtml += 'Credit building products, financial education, secured cards';
+                        } else {
+                            recsHtml += 'Standard products, cross-sell opportunities, loyalty programs';
+                        }
+                        
+                        recsHtml += '</li>';
+                    });
+                    recsHtml += '</ul>';
+                    
+                    document.getElementById('recommendations').innerHTML = recsHtml;
+                }
+            });
+    </script>
+</body>
+</html>

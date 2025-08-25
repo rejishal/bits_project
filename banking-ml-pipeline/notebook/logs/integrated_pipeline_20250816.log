@@ -1,0 +1,110 @@
+2025-08-16 03:26:26,887 - integrated_pipeline - INFO - __init__:27 - Pipeline loaded from models
+2025-08-16 03:26:26,894 - integrated_pipeline - INFO - __init__:35 - IntegratedBankingPipeline initialized
+2025-08-16 03:26:26,896 - integrated_pipeline - INFO - run_pipeline:48 - ==================================================
+2025-08-16 03:26:26,896 - integrated_pipeline - INFO - run_pipeline:49 - BANKING ML PIPELINE - EXECUTION STARTED
+2025-08-16 03:26:26,898 - integrated_pipeline - INFO - run_pipeline:50 - ==================================================
+2025-08-16 03:26:26,903 - integrated_pipeline - INFO - run_pipeline:55 - 
+[Step 1] Data Preprocessing
+2025-08-16 03:26:27,092 - integrated_pipeline - INFO - _preprocess_data:116 - Data preprocessed: (20000, 43)
+2025-08-16 03:26:27,105 - integrated_pipeline - INFO - run_pipeline:64 - 
+[Step 2] Customer Segmentation
+2025-08-16 03:27:27,912 - integrated_pipeline - INFO - run_pipeline:69 - 
+[Step 3] Data Splitting
+2025-08-16 03:27:27,931 - integrated_pipeline - INFO - _split_data:168 - Data split: Train 14000, Test 6000
+2025-08-16 03:27:27,936 - integrated_pipeline - INFO - run_pipeline:75 - 
+[Step 4] Loan Eligibility Prediction
+2025-08-16 03:28:00,893 - integrated_pipeline - INFO - run_pipeline:82 - 
+[Step 5] Segment-wise Analysis
+2025-08-16 03:28:00,902 - integrated_pipeline - INFO - run_pipeline:90 - 
+==================================================
+2025-08-16 03:28:00,902 - integrated_pipeline - INFO - run_pipeline:91 - PIPELINE EXECUTION COMPLETED
+2025-08-16 03:28:00,904 - integrated_pipeline - INFO - run_pipeline:92 - ==================================================
+2025-08-16 03:28:00,934 - integrated_pipeline - INFO - save_pipeline:302 - Pipeline saved to ../models
+2025-08-16 04:37:55,913 - integrated_pipeline - INFO - __init__:27 - Pipeline loaded from models
+2025-08-16 04:37:55,921 - integrated_pipeline - INFO - __init__:35 - IntegratedBankingPipeline initialized
+2025-08-16 04:37:55,923 - integrated_pipeline - INFO - run_pipeline:48 - ==================================================
+2025-08-16 04:37:55,924 - integrated_pipeline - INFO - run_pipeline:49 - BANKING ML PIPELINE - EXECUTION STARTED
+2025-08-16 04:37:55,924 - integrated_pipeline - INFO - run_pipeline:50 - ==================================================
+2025-08-16 04:37:55,926 - integrated_pipeline - INFO - run_pipeline:55 - 
+[Step 1] Data Preprocessing
+2025-08-16 04:37:56,091 - integrated_pipeline - INFO - _preprocess_data:116 - Data preprocessed: (10000, 42)
+2025-08-16 04:37:56,123 - integrated_pipeline - INFO - run_pipeline:64 - 
+[Step 2] Customer Segmentation
+2025-08-16 04:38:19,800 - integrated_pipeline - INFO - run_pipeline:69 - 
+[Step 3] Data Splitting
+2025-08-16 04:38:19,813 - integrated_pipeline - INFO - _split_data:168 - Data split: Train 7000, Test 3000
+2025-08-16 04:38:19,817 - integrated_pipeline - INFO - run_pipeline:75 - 
+[Step 4] Loan Eligibility Prediction
+2025-08-16 04:38:34,169 - integrated_pipeline - INFO - run_pipeline:82 - 
+[Step 5] Segment-wise Analysis
+2025-08-16 04:38:34,179 - integrated_pipeline - INFO - run_pipeline:90 - 
+==================================================
+2025-08-16 04:38:34,179 - integrated_pipeline - INFO - run_pipeline:91 - PIPELINE EXECUTION COMPLETED
+2025-08-16 04:38:34,179 - integrated_pipeline - INFO - run_pipeline:92 - ==================================================
+2025-08-16 04:38:34,206 - integrated_pipeline - INFO - save_pipeline:302 - Pipeline saved to ../models
+2025-08-16 12:34:40,766 - integrated_pipeline - INFO - __init__:27 - Pipeline loaded from models
+2025-08-16 12:34:40,776 - integrated_pipeline - INFO - __init__:35 - IntegratedBankingPipeline initialized
+2025-08-16 12:34:40,777 - integrated_pipeline - INFO - run_pipeline:48 - ==================================================
+2025-08-16 12:34:40,778 - integrated_pipeline - INFO - run_pipeline:49 - BANKING ML PIPELINE - EXECUTION STARTED
+2025-08-16 12:34:40,778 - integrated_pipeline - INFO - run_pipeline:50 - ==================================================
+2025-08-16 12:34:40,780 - integrated_pipeline - INFO - run_pipeline:55 - 
+[Step 1] Data Preprocessing
+2025-08-16 12:34:40,947 - integrated_pipeline - INFO - _preprocess_data:116 - Data preprocessed: (5000, 42)
+2025-08-16 12:34:40,949 - integrated_pipeline - INFO - run_pipeline:64 - 
+[Step 2] Customer Segmentation
+2025-08-16 12:34:47,272 - integrated_pipeline - INFO - run_pipeline:69 - 
+[Step 3] Data Splitting
+2025-08-16 12:34:47,280 - integrated_pipeline - INFO - _split_data:168 - Data split: Train 3500, Test 1500
+2025-08-16 12:34:47,280 - integrated_pipeline - INFO - run_pipeline:75 - 
+[Step 4] Loan Eligibility Prediction
+2025-08-16 12:34:54,912 - integrated_pipeline - INFO - run_pipeline:82 - 
+[Step 5] Segment-wise Analysis
+2025-08-16 12:34:54,917 - integrated_pipeline - INFO - run_pipeline:90 - 
+==================================================
+2025-08-16 12:34:54,918 - integrated_pipeline - INFO - run_pipeline:91 - PIPELINE EXECUTION COMPLETED
+2025-08-16 12:34:54,918 - integrated_pipeline - INFO - run_pipeline:92 - ==================================================
+2025-08-16 12:34:55,051 - integrated_pipeline - INFO - save_pipeline:302 - Pipeline saved to ../models
+2025-08-16 12:35:57,187 - integrated_pipeline - INFO - __init__:27 - Pipeline loaded from models
+2025-08-16 12:35:57,201 - integrated_pipeline - INFO - __init__:35 - IntegratedBankingPipeline initialized
+2025-08-16 12:35:57,202 - integrated_pipeline - INFO - run_pipeline:48 - ==================================================
+2025-08-16 12:35:57,203 - integrated_pipeline - INFO - run_pipeline:49 - BANKING ML PIPELINE - EXECUTION STARTED
+2025-08-16 12:35:57,204 - integrated_pipeline - INFO - run_pipeline:50 - ==================================================
+2025-08-16 12:35:57,206 - integrated_pipeline - INFO - run_pipeline:55 - 
+[Step 1] Data Preprocessing
+2025-08-16 12:35:57,283 - integrated_pipeline - INFO - _preprocess_data:116 - Data preprocessed: (5000, 42)
+2025-08-16 12:35:57,285 - integrated_pipeline - INFO - run_pipeline:64 - 
+[Step 2] Customer Segmentation
+2025-08-16 12:36:03,176 - integrated_pipeline - INFO - run_pipeline:69 - 
+[Step 3] Data Splitting
+2025-08-16 12:36:03,176 - integrated_pipeline - INFO - _split_data:168 - Data split: Train 3500, Test 1500
+2025-08-16 12:36:03,176 - integrated_pipeline - INFO - run_pipeline:75 - 
+[Step 4] Loan Eligibility Prediction
+2025-08-16 12:36:10,702 - integrated_pipeline - INFO - run_pipeline:82 - 
+[Step 5] Segment-wise Analysis
+2025-08-16 12:36:10,710 - integrated_pipeline - INFO - run_pipeline:90 - 
+==================================================
+2025-08-16 12:36:10,712 - integrated_pipeline - INFO - run_pipeline:91 - PIPELINE EXECUTION COMPLETED
+2025-08-16 12:36:10,714 - integrated_pipeline - INFO - run_pipeline:92 - ==================================================
+2025-08-16 12:36:10,875 - integrated_pipeline - INFO - save_pipeline:302 - Pipeline saved to ../models
+2025-08-16 12:37:32,741 - integrated_pipeline - INFO - __init__:27 - Pipeline loaded from models
+2025-08-16 12:37:32,750 - integrated_pipeline - INFO - __init__:35 - IntegratedBankingPipeline initialized
+2025-08-16 12:37:32,750 - integrated_pipeline - INFO - run_pipeline:48 - ==================================================
+2025-08-16 12:37:32,760 - integrated_pipeline - INFO - run_pipeline:49 - BANKING ML PIPELINE - EXECUTION STARTED
+2025-08-16 12:37:32,764 - integrated_pipeline - INFO - run_pipeline:50 - ==================================================
+2025-08-16 12:37:32,764 - integrated_pipeline - INFO - run_pipeline:55 - 
+[Step 1] Data Preprocessing
+2025-08-16 12:37:32,845 - integrated_pipeline - INFO - _preprocess_data:116 - Data preprocessed: (5000, 42)
+2025-08-16 12:37:32,845 - integrated_pipeline - INFO - run_pipeline:64 - 
+[Step 2] Customer Segmentation
+2025-08-16 12:37:38,212 - integrated_pipeline - INFO - run_pipeline:69 - 
+[Step 3] Data Splitting
+2025-08-16 12:37:38,220 - integrated_pipeline - INFO - _split_data:168 - Data split: Train 3500, Test 1500
+2025-08-16 12:37:38,222 - integrated_pipeline - INFO - run_pipeline:75 - 
+[Step 4] Loan Eligibility Prediction
+2025-08-16 12:37:45,747 - integrated_pipeline - INFO - run_pipeline:82 - 
+[Step 5] Segment-wise Analysis
+2025-08-16 12:37:45,751 - integrated_pipeline - INFO - run_pipeline:90 - 
+==================================================
+2025-08-16 12:37:45,751 - integrated_pipeline - INFO - run_pipeline:91 - PIPELINE EXECUTION COMPLETED
+2025-08-16 12:37:45,751 - integrated_pipeline - INFO - run_pipeline:92 - ==================================================
+2025-08-16 12:37:45,780 - integrated_pipeline - INFO - save_pipeline:302 - Pipeline saved to ../models

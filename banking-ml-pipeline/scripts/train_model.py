@@ -49,13 +49,13 @@ def main():
             
             # Add loan approval target (for demonstration)
             # In real scenario, this would come from actual data
-            approval_score = (
+            """ approval_score = (
                 (data['credit_score'] > 650).astype(int) * 0.3 +
                 (data['income'] > 50000).astype(int) * 0.2 +
                 (data['previous_defaults'] == 0).astype(int) * 0.3 +
                 (data['payment_history_score'] > 0.7).astype(int) * 0.2
             )
-            data['loan_approved'] = (approval_score > 0.5).astype(int)
+            data['loan_approved'] = (approval_score > 0.5).astype(int) """
             
         elif args.data:
             logger.info(f"Loading data from: {args.data}")

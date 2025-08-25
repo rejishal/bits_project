@@ -1,0 +1,87 @@
+2025-08-16 03:25:07,739 - data_processing - INFO - __init__:33 - DataPreprocessor initialized
+2025-08-16 03:25:07,749 - data_processing - INFO - fit_transform:73 - Fitting preprocessor on data with shape (20000, 27)
+2025-08-16 03:25:07,750 - data_processing - INFO - create_preprocessing_pipeline:37 - Creating preprocessing pipeline
+2025-08-16 03:25:07,753 - data_processing - INFO - create_preprocessing_pipeline:66 - Pipeline created with 19 numeric and 5 categorical features
+2025-08-16 03:25:07,870 - data_processing - INFO - _extract_feature_names:101 - Total features after preprocessing: 43
+2025-08-16 03:25:07,870 - data_processing - INFO - fit_transform:83 - Data transformed to shape (20000, 43)
+2025-08-16 03:26:26,890 - data_processing - INFO - __init__:33 - DataPreprocessor initialized
+2025-08-16 03:26:26,905 - data_processing - INFO - feature_engineering:105 - Starting feature engineering
+2025-08-16 03:26:26,981 - data_processing - INFO - feature_engineering:156 - Feature engineering completed
+2025-08-16 03:26:26,981 - data_processing - INFO - fit_transform:73 - Fitting preprocessor on data with shape (20000, 32)
+2025-08-16 03:26:26,981 - data_processing - INFO - create_preprocessing_pipeline:37 - Creating preprocessing pipeline
+2025-08-16 03:26:26,981 - data_processing - INFO - create_preprocessing_pipeline:66 - Pipeline created with 19 numeric and 5 categorical features
+2025-08-16 03:26:27,092 - data_processing - INFO - _extract_feature_names:101 - Total features after preprocessing: 43
+2025-08-16 03:26:27,092 - data_processing - INFO - fit_transform:83 - Data transformed to shape (20000, 43)
+2025-08-16 03:28:00,915 - data_processing - INFO - save:184 - Preprocessor saved to ../models/preprocessor.pkl
+2025-08-16 04:09:17,366 - data_processing - INFO - __init__:33 - DataPreprocessor initialized
+2025-08-16 04:09:17,368 - data_processing - INFO - fit_transform:73 - Fitting preprocessor on data with shape (10000, 27)
+2025-08-16 04:09:17,369 - data_processing - INFO - create_preprocessing_pipeline:37 - Creating preprocessing pipeline
+2025-08-16 04:09:17,370 - data_processing - INFO - create_preprocessing_pipeline:66 - Pipeline created with 19 numeric and 5 categorical features
+2025-08-16 04:09:17,475 - data_processing - INFO - _extract_feature_names:101 - Total features after preprocessing: 42
+2025-08-16 04:09:17,476 - data_processing - INFO - fit_transform:83 - Data transformed to shape (10000, 42)
+2025-08-16 04:31:31,244 - data_processing - INFO - __init__:33 - DataPreprocessor initialized
+2025-08-16 04:31:31,244 - data_processing - INFO - fit_transform:73 - Fitting preprocessor on data with shape (10000, 27)
+2025-08-16 04:31:31,244 - data_processing - INFO - create_preprocessing_pipeline:37 - Creating preprocessing pipeline
+2025-08-16 04:31:31,244 - data_processing - INFO - create_preprocessing_pipeline:66 - Pipeline created with 19 numeric and 5 categorical features
+2025-08-16 04:31:31,304 - data_processing - INFO - _extract_feature_names:101 - Total features after preprocessing: 42
+2025-08-16 04:31:31,304 - data_processing - INFO - fit_transform:83 - Data transformed to shape (10000, 42)
+2025-08-16 04:37:43,126 - data_processing - INFO - __init__:33 - DataPreprocessor initialized
+2025-08-16 04:37:43,138 - data_processing - INFO - fit_transform:73 - Fitting preprocessor on data with shape (10000, 27)
+2025-08-16 04:37:43,139 - data_processing - INFO - create_preprocessing_pipeline:37 - Creating preprocessing pipeline
+2025-08-16 04:37:43,142 - data_processing - INFO - create_preprocessing_pipeline:66 - Pipeline created with 19 numeric and 5 categorical features
+2025-08-16 04:37:43,208 - data_processing - INFO - _extract_feature_names:101 - Total features after preprocessing: 42
+2025-08-16 04:37:43,208 - data_processing - INFO - fit_transform:83 - Data transformed to shape (10000, 42)
+2025-08-16 04:37:55,916 - data_processing - INFO - __init__:33 - DataPreprocessor initialized
+2025-08-16 04:37:55,926 - data_processing - INFO - feature_engineering:105 - Starting feature engineering
+2025-08-16 04:37:55,972 - data_processing - INFO - feature_engineering:156 - Feature engineering completed
+2025-08-16 04:37:55,972 - data_processing - INFO - fit_transform:73 - Fitting preprocessor on data with shape (10000, 32)
+2025-08-16 04:37:55,988 - data_processing - INFO - create_preprocessing_pipeline:37 - Creating preprocessing pipeline
+2025-08-16 04:37:55,988 - data_processing - INFO - create_preprocessing_pipeline:66 - Pipeline created with 19 numeric and 5 categorical features
+2025-08-16 04:37:56,085 - data_processing - INFO - _extract_feature_names:101 - Total features after preprocessing: 42
+2025-08-16 04:37:56,087 - data_processing - INFO - fit_transform:83 - Data transformed to shape (10000, 42)
+2025-08-16 04:38:34,189 - data_processing - INFO - save:184 - Preprocessor saved to ../models/preprocessor.pkl
+2025-08-16 12:34:25,199 - data_processing - INFO - __init__:33 - DataPreprocessor initialized
+2025-08-16 12:34:25,202 - data_processing - INFO - fit_transform:73 - Fitting preprocessor on data with shape (5000, 27)
+2025-08-16 12:34:25,203 - data_processing - INFO - create_preprocessing_pipeline:37 - Creating preprocessing pipeline
+2025-08-16 12:34:25,204 - data_processing - INFO - create_preprocessing_pipeline:66 - Pipeline created with 19 numeric and 5 categorical features
+2025-08-16 12:34:25,245 - data_processing - INFO - _extract_feature_names:101 - Total features after preprocessing: 42
+2025-08-16 12:34:25,245 - data_processing - INFO - fit_transform:83 - Data transformed to shape (5000, 42)
+2025-08-16 12:34:40,766 - data_processing - INFO - __init__:33 - DataPreprocessor initialized
+2025-08-16 12:34:40,780 - data_processing - INFO - feature_engineering:105 - Starting feature engineering
+2025-08-16 12:34:40,858 - data_processing - INFO - feature_engineering:156 - Feature engineering completed
+2025-08-16 12:34:40,862 - data_processing - INFO - fit_transform:73 - Fitting preprocessor on data with shape (5000, 32)
+2025-08-16 12:34:40,864 - data_processing - INFO - create_preprocessing_pipeline:37 - Creating preprocessing pipeline
+2025-08-16 12:34:40,864 - data_processing - INFO - create_preprocessing_pipeline:66 - Pipeline created with 19 numeric and 5 categorical features
+2025-08-16 12:34:40,941 - data_processing - INFO - _extract_feature_names:101 - Total features after preprocessing: 42
+2025-08-16 12:34:40,943 - data_processing - INFO - fit_transform:83 - Data transformed to shape (5000, 42)
+2025-08-16 12:34:54,929 - data_processing - INFO - save:184 - Preprocessor saved to ../models/preprocessor.pkl
+2025-08-16 12:35:42,108 - data_processing - INFO - __init__:33 - DataPreprocessor initialized
+2025-08-16 12:35:42,110 - data_processing - INFO - fit_transform:73 - Fitting preprocessor on data with shape (5000, 27)
+2025-08-16 12:35:42,112 - data_processing - INFO - create_preprocessing_pipeline:37 - Creating preprocessing pipeline
+2025-08-16 12:35:42,112 - data_processing - INFO - create_preprocessing_pipeline:66 - Pipeline created with 19 numeric and 5 categorical features
+2025-08-16 12:35:42,171 - data_processing - INFO - _extract_feature_names:101 - Total features after preprocessing: 42
+2025-08-16 12:35:42,173 - data_processing - INFO - fit_transform:83 - Data transformed to shape (5000, 42)
+2025-08-16 12:35:57,187 - data_processing - INFO - __init__:33 - DataPreprocessor initialized
+2025-08-16 12:35:57,207 - data_processing - INFO - feature_engineering:105 - Starting feature engineering
+2025-08-16 12:35:57,232 - data_processing - INFO - feature_engineering:156 - Feature engineering completed
+2025-08-16 12:35:57,232 - data_processing - INFO - fit_transform:73 - Fitting preprocessor on data with shape (5000, 32)
+2025-08-16 12:35:57,232 - data_processing - INFO - create_preprocessing_pipeline:37 - Creating preprocessing pipeline
+2025-08-16 12:35:57,232 - data_processing - INFO - create_preprocessing_pipeline:66 - Pipeline created with 19 numeric and 5 categorical features
+2025-08-16 12:35:57,280 - data_processing - INFO - _extract_feature_names:101 - Total features after preprocessing: 42
+2025-08-16 12:35:57,280 - data_processing - INFO - fit_transform:83 - Data transformed to shape (5000, 42)
+2025-08-16 12:36:10,739 - data_processing - INFO - save:184 - Preprocessor saved to ../models/preprocessor.pkl
+2025-08-16 12:37:20,059 - data_processing - INFO - __init__:33 - DataPreprocessor initialized
+2025-08-16 12:37:20,060 - data_processing - INFO - fit_transform:73 - Fitting preprocessor on data with shape (5000, 27)
+2025-08-16 12:37:20,061 - data_processing - INFO - create_preprocessing_pipeline:37 - Creating preprocessing pipeline
+2025-08-16 12:37:20,062 - data_processing - INFO - create_preprocessing_pipeline:66 - Pipeline created with 19 numeric and 5 categorical features
+2025-08-16 12:37:20,102 - data_processing - INFO - _extract_feature_names:101 - Total features after preprocessing: 42
+2025-08-16 12:37:20,103 - data_processing - INFO - fit_transform:83 - Data transformed to shape (5000, 42)
+2025-08-16 12:37:32,748 - data_processing - INFO - __init__:33 - DataPreprocessor initialized
+2025-08-16 12:37:32,769 - data_processing - INFO - feature_engineering:105 - Starting feature engineering
+2025-08-16 12:37:32,798 - data_processing - INFO - feature_engineering:156 - Feature engineering completed
+2025-08-16 12:37:32,814 - data_processing - INFO - fit_transform:73 - Fitting preprocessor on data with shape (5000, 32)
+2025-08-16 12:37:32,814 - data_processing - INFO - create_preprocessing_pipeline:37 - Creating preprocessing pipeline
+2025-08-16 12:37:32,814 - data_processing - INFO - create_preprocessing_pipeline:66 - Pipeline created with 19 numeric and 5 categorical features
+2025-08-16 12:37:32,845 - data_processing - INFO - _extract_feature_names:101 - Total features after preprocessing: 42
+2025-08-16 12:37:32,845 - data_processing - INFO - fit_transform:83 - Data transformed to shape (5000, 42)
+2025-08-16 12:37:45,764 - data_processing - INFO - save:184 - Preprocessor saved to ../models/preprocessor.pkl

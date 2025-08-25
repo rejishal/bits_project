@@ -23,14 +23,6 @@ from utils.config import config
 app = Flask(__name__)
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16MB max file size
 
-# Import and register visualization blueprint
-try:
-    from api.visualization_endpoints_simple import viz_bp
-    app.register_blueprint(viz_bp, url_prefix='/visualizations')
-    api_logger.info("Visualization endpoints registered")
-except ImportError:
-    api_logger.warning("Visualization endpoints not available")
-
 # Load the pipeline
 pipeline = IntegratedBankingPipeline()
 try:
@@ -62,113 +54,9 @@ def handle_error(error):
         'message': str(error)
     }), 500
 
-@app.route('/')
-def welcome():
-    """Welcome page with API documentation"""
-    html = """
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <title>Banking ML Pipeline API</title>
-        <style>
-            body { font-family: Arial, sans-serif; margin: 40px; background-color: #f5f5f5; }
-            .container { max-width: 800px; margin: 0 auto; background-color: white; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-            h1 { color: #333; }
-            h2 { color: #4CAF50; margin-top: 30px; }
-            .endpoint { background-color: #f8f9fa; padding: 15px; margin: 10px 0; border-radius: 5px; border-left: 4px solid #4CAF50; }
-            .method { font-weight: bold; color: #4CAF50; }
-            .path { font-family: monospace; color: #333; }
-            .description { color: #666; margin-top: 5px; }
-            a { color: #4CAF50; text-decoration: none; }
-            a:hover { text-decoration: underline; }
-            .button { background-color: #4CAF50; color: white; padding: 10px 20px; border-radius: 5px; display: inline-block; margin: 5px; }
-            .button:hover { background-color: #45a049; }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <h1>🏦 Banking ML Pipeline API</h1>
-            <p>Welcome to the Banking ML Pipeline API. This system provides customer segmentation and loan eligibility prediction.</p>
-            
-            <h2>📊 Visualization Options</h2>
-            <a href="/visualizations/segments/dashboard" class="button">Interactive Dashboard</a>
-            <a href="/visualizations/segments/notebook" class="button">Notebook-style Viewer</a>
-            
-            <h2>🔧 API Endpoints</h2>
-            
-            <div class="endpoint">
-                <span class="method">GET</span> <span class="path">/health</span>
-                <div class="description">Check API health status</div>
-                <a href="/health">Try it</a>
-            </div>
-            
-            <div class="endpoint">
-                <span class="method">POST</span> <span class="path">/predict</span>
-                <div class="description">Single customer loan prediction</div>
-            </div>
-            
-            <div class="endpoint">
-                <span class="method">POST</span> <span class="path">/batch_predict</span>
-                <div class="description">Batch prediction for multiple customers</div>
-            </div>
-            
-            <div class="endpoint">
-                <span class="method">GET</span> <span class="path">/model_info</span>
-                <div class="description">Get model information</div>
-                <a href="/model_info">Try it</a>
-            </div>
-            
-            <div class="endpoint">
-                <span class="method">GET</span> <span class="path">/segments</span>
-                <div class="description">Get customer segment information</div>
-                <a href="/segments">Try it</a>
-            </div>
-            
-            <div class="endpoint">
-                <span class="method">GET</span> <span class="path">/feature_importance</span>
-                <div class="description">Get feature importance rankings</div>
-                <a href="/feature_importance">Try it</a>
-            </div>
-            
-            <h2>📈 Visualization Endpoints</h2>
-            
-            <div class="endpoint">
-                <span class="method">GET</span> <span class="path">/visualizations/segments/dashboard</span>
-                <div class="description">Interactive segmentation dashboard</div>
-                <a href="/visualizations/segments/dashboard">View Dashboard</a>
-            </div>
-            
-            <div class="endpoint">
-                <span class="method">GET</span> <span class="path">/visualizations/segments/pca</span>
-                <div class="description">PCA visualization of customer segments</div>
-                <a href="/visualizations/segments/pca">View Image</a>
-            </div>
-            
-            <div class="endpoint">
-                <span class="method">GET</span> <span class="path">/visualizations/segments/distribution</span>
-                <div class="description">Segment size distribution charts</div>
-                <a href="/visualizations/segments/distribution">View Image</a>
-            </div>
-            
-            <div class="endpoint">
-                <span class="method">GET</span> <span class="path">/visualizations/segments/profiles</span>
-                <div class="description">Segment profile comparison heatmap</div>
-                <a href="/visualizations/segments/profiles">View Image</a>
-            </div>
-            
-            <div class="endpoint">
-                <span class="method">GET</span> <span class="path">/visualizations/segments/radar</span>
-                <div class="description">Radar chart comparing segments</div>
-                <a href="/visualizations/segments/radar">View Image</a>
-            </div>
-            
-            <h2>📝 Note</h2>
-            <p>This API is currently using models trained on <strong>synthetic data</strong>. Performance metrics are preliminary and will improve with real production data.</p>
-        </div>
-    </body>
-    </html>
-    """
-    return html
+@app.route("/", methods=['POST', 'GET'])
+def index():
+    return "Banking ML Pipeline API is running!"
 
 @app.route('/health', methods=['GET'])
 def health_check():
@@ -198,19 +86,6 @@ def predict():
         
         # Create DataFrame
         customer_df = pd.DataFrame([data])
-        
-        # Add missing fields with default values if not provided
-        default_values = {
-            'employment_type': 'Full-time',
-            'loan_purpose': 'Personal',
-            'digital_usage_rate': 0.7,
-            'max_balance': data.get('avg_balance', 10000) * 1.5,
-            'dependents': 0
-        }
-        
-        for field, default in default_values.items():
-            if field not in customer_df.columns:
-                customer_df[field] = default
         
         # Make prediction
         result = pipeline.predict_new_customer(customer_df)

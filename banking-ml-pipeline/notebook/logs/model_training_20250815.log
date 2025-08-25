@@ -1,0 +1,539 @@
+2025-08-15 16:55:19,314 - model_training - INFO - __init__:32 - CustomerSegmentation initialized with kmeans algorithm
+2025-08-15 16:57:57,123 - model_training - INFO - __init__:32 - CustomerSegmentation initialized with kmeans algorithm
+2025-08-15 16:58:08,379 - model_training - INFO - __init__:32 - CustomerSegmentation initialized with kmeans algorithm
+2025-08-15 16:58:24,100 - model_training - INFO - __init__:32 - CustomerSegmentation initialized with kmeans algorithm
+2025-08-15 16:58:34,924 - model_training - INFO - __init__:32 - CustomerSegmentation initialized with kmeans algorithm
+2025-08-15 16:58:41,081 - model_training - INFO - __init__:32 - CustomerSegmentation initialized with kmeans algorithm
+2025-08-15 16:58:53,506 - model_training - INFO - __init__:32 - CustomerSegmentation initialized with kmeans algorithm
+2025-08-15 16:59:12,691 - model_training - INFO - __init__:32 - CustomerSegmentation initialized with kmeans algorithm
+2025-08-15 16:59:43,741 - model_training - INFO - __init__:32 - CustomerSegmentation initialized with kmeans algorithm
+2025-08-15 17:00:07,373 - model_training - INFO - __init__:32 - CustomerSegmentation initialized with kmeans algorithm
+2025-08-15 17:01:36,938 - model_training - INFO - __init__:32 - CustomerSegmentation initialized with kmeans algorithm
+2025-08-15 17:02:23,006 - model_training - INFO - __init__:32 - CustomerSegmentation initialized with kmeans algorithm
+2025-08-15 17:03:20,907 - model_training - INFO - __init__:32 - CustomerSegmentation initialized with kmeans algorithm
+2025-08-15 17:03:20,907 - model_training - INFO - find_optimal_clusters:49 - Finding optimal clusters in range (2, 10)
+2025-08-15 17:03:20,907 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=2
+2025-08-15 17:03:21,628 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=3
+2025-08-15 17:03:22,209 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=4
+2025-08-15 17:03:22,747 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=5
+2025-08-15 17:03:23,316 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=6
+2025-08-15 17:03:23,881 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=7
+2025-08-15 17:03:24,506 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=8
+2025-08-15 17:03:25,093 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=9
+2025-08-15 17:03:25,725 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=10
+2025-08-15 17:03:26,326 - model_training - INFO - _determine_optimal_clusters:96 - Optimal clusters determined: 3
+2025-08-15 17:03:26,326 - model_training - INFO - fit:114 - Fitting kmeans with 3 clusters
+2025-08-15 17:03:26,871 - model_training - INFO - fit:138 - Clustering complete. Silhouette score: 0.277
+2025-08-15 17:04:06,374 - model_training - INFO - __init__:32 - CustomerSegmentation initialized with kmeans algorithm
+2025-08-15 17:04:06,375 - model_training - INFO - find_optimal_clusters:49 - Finding optimal clusters in range (2, 10)
+2025-08-15 17:04:06,377 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=2
+2025-08-15 17:04:06,972 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=3
+2025-08-15 17:04:07,573 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=4
+2025-08-15 17:04:08,137 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=5
+2025-08-15 17:04:08,776 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=6
+2025-08-15 17:04:09,331 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=7
+2025-08-15 17:04:09,936 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=8
+2025-08-15 17:04:10,551 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=9
+2025-08-15 17:04:11,197 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=10
+2025-08-15 17:04:11,790 - model_training - INFO - _determine_optimal_clusters:96 - Optimal clusters determined: 3
+2025-08-15 17:04:11,792 - model_training - INFO - fit:114 - Fitting kmeans with 3 clusters
+2025-08-15 17:04:12,359 - model_training - INFO - fit:138 - Clustering complete. Silhouette score: 0.277
+2025-08-15 17:04:49,616 - model_training - INFO - __init__:32 - CustomerSegmentation initialized with kmeans algorithm
+2025-08-15 17:04:49,618 - model_training - INFO - find_optimal_clusters:49 - Finding optimal clusters in range (2, 10)
+2025-08-15 17:04:49,619 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=2
+2025-08-15 17:04:50,182 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=3
+2025-08-15 17:04:50,749 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=4
+2025-08-15 17:04:51,281 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=5
+2025-08-15 17:04:51,982 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=6
+2025-08-15 17:04:52,582 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=7
+2025-08-15 17:04:53,283 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=8
+2025-08-15 17:04:53,918 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=9
+2025-08-15 17:04:54,532 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=10
+2025-08-15 17:04:55,165 - model_training - INFO - _determine_optimal_clusters:96 - Optimal clusters determined: 3
+2025-08-15 17:04:55,165 - model_training - INFO - fit:114 - Fitting kmeans with 3 clusters
+2025-08-15 17:04:55,704 - model_training - INFO - fit:138 - Clustering complete. Silhouette score: 0.277
+2025-08-15 17:05:14,377 - model_training - INFO - __init__:32 - CustomerSegmentation initialized with kmeans algorithm
+2025-08-15 17:05:14,379 - model_training - INFO - find_optimal_clusters:49 - Finding optimal clusters in range (2, 10)
+2025-08-15 17:05:14,380 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=2
+2025-08-15 17:05:14,944 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=3
+2025-08-15 17:05:15,481 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=4
+2025-08-15 17:05:16,048 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=5
+2025-08-15 17:05:16,579 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=6
+2025-08-15 17:05:17,158 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=7
+2025-08-15 17:05:17,770 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=8
+2025-08-15 17:05:18,407 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=9
+2025-08-15 17:05:19,039 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=10
+2025-08-15 17:05:19,654 - model_training - INFO - _determine_optimal_clusters:96 - Optimal clusters determined: 3
+2025-08-15 17:05:19,654 - model_training - INFO - fit:114 - Fitting kmeans with 3 clusters
+2025-08-15 17:05:20,193 - model_training - INFO - fit:138 - Clustering complete. Silhouette score: 0.277
+2025-08-15 17:06:56,345 - model_training - INFO - __init__:37 - LoanEligibilityPredictor initialized with random_forest
+2025-08-15 17:06:56,349 - model_training - INFO - train_single_model:118 - Training logistic_regression model
+2025-08-15 17:06:56,473 - model_training - INFO - train_single_model:146 - logistic_regression - AUC-ROC: 0.999
+2025-08-15 17:06:56,473 - model_training - INFO - train_single_model:118 - Training random_forest model
+2025-08-15 17:06:58,407 - model_training - INFO - train_single_model:146 - random_forest - AUC-ROC: 1.000
+2025-08-15 17:06:58,407 - model_training - INFO - train_single_model:118 - Training xgboost model
+2025-08-15 17:06:58,770 - model_training - INFO - train_single_model:146 - xgboost - AUC-ROC: 1.000
+2025-08-15 17:06:58,774 - model_training - INFO - train_multiple_models:191 - Best model: random_forest
+2025-08-15 17:06:58,784 - model_training - INFO - train_single_model:118 - Training random_forest model
+2025-08-15 17:07:00,714 - model_training - INFO - train_single_model:146 - random_forest - AUC-ROC: 1.000
+2025-08-15 17:07:47,490 - model_training - INFO - __init__:37 - LoanEligibilityPredictor initialized with random_forest
+2025-08-15 17:07:47,493 - model_training - INFO - train_single_model:118 - Training logistic_regression model
+2025-08-15 17:07:47,623 - model_training - INFO - train_single_model:146 - logistic_regression - AUC-ROC: 0.999
+2025-08-15 17:07:47,630 - model_training - INFO - train_single_model:118 - Training random_forest model
+2025-08-15 17:07:49,472 - model_training - INFO - train_single_model:146 - random_forest - AUC-ROC: 1.000
+2025-08-15 17:07:49,472 - model_training - INFO - train_single_model:118 - Training xgboost model
+2025-08-15 17:07:49,795 - model_training - INFO - train_single_model:146 - xgboost - AUC-ROC: 1.000
+2025-08-15 17:07:49,797 - model_training - INFO - train_multiple_models:191 - Best model: random_forest
+2025-08-15 17:07:49,807 - model_training - INFO - train_single_model:118 - Training random_forest model
+2025-08-15 17:07:51,776 - model_training - INFO - train_single_model:146 - random_forest - AUC-ROC: 1.000
+2025-08-15 17:08:31,491 - model_training - INFO - __init__:37 - LoanEligibilityPredictor initialized with random_forest
+2025-08-15 17:08:31,493 - model_training - INFO - train_single_model:118 - Training logistic_regression model
+2025-08-15 17:08:31,617 - model_training - INFO - train_single_model:146 - logistic_regression - AUC-ROC: 0.999
+2025-08-15 17:08:31,617 - model_training - INFO - train_single_model:118 - Training random_forest model
+2025-08-15 17:08:33,451 - model_training - INFO - train_single_model:146 - random_forest - AUC-ROC: 1.000
+2025-08-15 17:08:33,451 - model_training - INFO - train_single_model:118 - Training xgboost model
+2025-08-15 17:08:33,777 - model_training - INFO - train_single_model:146 - xgboost - AUC-ROC: 1.000
+2025-08-15 17:08:33,777 - model_training - INFO - train_multiple_models:191 - Best model: random_forest
+2025-08-15 17:08:33,790 - model_training - INFO - train_single_model:118 - Training random_forest model
+2025-08-15 17:08:35,687 - model_training - INFO - train_single_model:146 - random_forest - AUC-ROC: 1.000
+2025-08-15 17:09:20,573 - model_training - INFO - __init__:37 - LoanEligibilityPredictor initialized with random_forest
+2025-08-15 17:09:20,574 - model_training - INFO - train_single_model:118 - Training logistic_regression model
+2025-08-15 17:09:20,732 - model_training - INFO - train_single_model:146 - logistic_regression - AUC-ROC: 0.999
+2025-08-15 17:09:20,732 - model_training - INFO - train_single_model:118 - Training random_forest model
+2025-08-15 17:09:22,567 - model_training - INFO - train_single_model:146 - random_forest - AUC-ROC: 1.000
+2025-08-15 17:09:22,567 - model_training - INFO - train_single_model:118 - Training xgboost model
+2025-08-15 17:09:22,915 - model_training - INFO - train_single_model:146 - xgboost - AUC-ROC: 1.000
+2025-08-15 17:09:22,918 - model_training - INFO - train_multiple_models:191 - Best model: random_forest
+2025-08-15 17:09:22,928 - model_training - INFO - train_single_model:118 - Training random_forest model
+2025-08-15 17:09:24,869 - model_training - INFO - train_single_model:146 - random_forest - AUC-ROC: 1.000
+2025-08-15 17:09:41,490 - model_training - INFO - __init__:37 - LoanEligibilityPredictor initialized with random_forest
+2025-08-15 17:09:41,493 - model_training - INFO - train_single_model:118 - Training logistic_regression model
+2025-08-15 17:09:41,620 - model_training - INFO - train_single_model:146 - logistic_regression - AUC-ROC: 0.999
+2025-08-15 17:09:41,620 - model_training - INFO - train_single_model:118 - Training random_forest model
+2025-08-15 17:09:43,605 - model_training - INFO - train_single_model:146 - random_forest - AUC-ROC: 1.000
+2025-08-15 17:09:43,605 - model_training - INFO - train_single_model:118 - Training xgboost model
+2025-08-15 17:09:43,975 - model_training - INFO - train_single_model:146 - xgboost - AUC-ROC: 1.000
+2025-08-15 17:09:43,978 - model_training - INFO - train_multiple_models:191 - Best model: random_forest
+2025-08-15 17:09:43,990 - model_training - INFO - train_single_model:118 - Training random_forest model
+2025-08-15 17:09:45,870 - model_training - INFO - train_single_model:146 - random_forest - AUC-ROC: 1.000
+2025-08-15 17:11:05,545 - model_training - INFO - __init__:37 - LoanEligibilityPredictor initialized with random_forest
+2025-08-15 17:11:05,547 - model_training - INFO - train_single_model:118 - Training logistic_regression model
+2025-08-15 17:11:05,684 - model_training - INFO - train_single_model:146 - logistic_regression - AUC-ROC: 0.999
+2025-08-15 17:11:05,684 - model_training - INFO - train_single_model:118 - Training random_forest model
+2025-08-15 17:11:07,642 - model_training - INFO - train_single_model:146 - random_forest - AUC-ROC: 1.000
+2025-08-15 17:11:07,643 - model_training - INFO - train_single_model:118 - Training xgboost model
+2025-08-15 17:11:07,946 - model_training - INFO - train_single_model:146 - xgboost - AUC-ROC: 1.000
+2025-08-15 17:11:07,946 - model_training - INFO - train_multiple_models:191 - Best model: random_forest
+2025-08-15 17:11:07,958 - model_training - INFO - train_single_model:118 - Training random_forest model
+2025-08-15 17:11:09,876 - model_training - INFO - train_single_model:146 - random_forest - AUC-ROC: 1.000
+2025-08-15 17:11:58,070 - model_training - INFO - __init__:37 - LoanEligibilityPredictor initialized with random_forest
+2025-08-15 17:11:58,071 - model_training - INFO - train_single_model:118 - Training logistic_regression model
+2025-08-15 17:11:58,220 - model_training - INFO - train_single_model:146 - logistic_regression - AUC-ROC: 0.999
+2025-08-15 17:11:58,220 - model_training - INFO - train_single_model:118 - Training random_forest model
+2025-08-15 17:12:00,041 - model_training - INFO - train_single_model:146 - random_forest - AUC-ROC: 1.000
+2025-08-15 17:12:00,041 - model_training - INFO - train_single_model:118 - Training xgboost model
+2025-08-15 17:12:00,343 - model_training - INFO - train_single_model:146 - xgboost - AUC-ROC: 1.000
+2025-08-15 17:12:00,345 - model_training - INFO - train_multiple_models:191 - Best model: random_forest
+2025-08-15 17:12:00,355 - model_training - INFO - train_single_model:118 - Training random_forest model
+2025-08-15 17:12:02,244 - model_training - INFO - train_single_model:146 - random_forest - AUC-ROC: 1.000
+2025-08-15 17:13:55,461 - model_training - INFO - __init__:37 - LoanEligibilityPredictor initialized with random_forest
+2025-08-15 17:13:55,463 - model_training - INFO - train_single_model:118 - Training logistic_regression model
+2025-08-15 17:13:55,573 - model_training - INFO - train_single_model:146 - logistic_regression - AUC-ROC: 0.999
+2025-08-15 17:13:55,573 - model_training - INFO - train_single_model:118 - Training random_forest model
+2025-08-15 17:13:57,497 - model_training - INFO - train_single_model:146 - random_forest - AUC-ROC: 1.000
+2025-08-15 17:13:57,498 - model_training - INFO - train_single_model:118 - Training xgboost model
+2025-08-15 17:13:57,827 - model_training - INFO - train_single_model:146 - xgboost - AUC-ROC: 1.000
+2025-08-15 17:13:57,829 - model_training - INFO - train_multiple_models:191 - Best model: random_forest
+2025-08-15 17:13:57,838 - model_training - INFO - train_single_model:118 - Training random_forest model
+2025-08-15 17:13:59,707 - model_training - INFO - train_single_model:146 - random_forest - AUC-ROC: 1.000
+2025-08-15 17:14:33,716 - model_training - INFO - __init__:37 - LoanEligibilityPredictor initialized with random_forest
+2025-08-15 17:14:33,716 - model_training - INFO - train_single_model:118 - Training logistic_regression model
+2025-08-15 17:14:33,861 - model_training - INFO - train_single_model:146 - logistic_regression - AUC-ROC: 0.999
+2025-08-15 17:14:33,861 - model_training - INFO - train_single_model:118 - Training random_forest model
+2025-08-15 17:14:35,780 - model_training - INFO - train_single_model:146 - random_forest - AUC-ROC: 1.000
+2025-08-15 17:14:35,780 - model_training - INFO - train_single_model:118 - Training xgboost model
+2025-08-15 17:14:36,124 - model_training - INFO - train_single_model:146 - xgboost - AUC-ROC: 1.000
+2025-08-15 17:14:36,126 - model_training - INFO - train_multiple_models:191 - Best model: random_forest
+2025-08-15 17:14:36,136 - model_training - INFO - train_single_model:118 - Training random_forest model
+2025-08-15 17:14:38,015 - model_training - INFO - train_single_model:146 - random_forest - AUC-ROC: 1.000
+2025-08-15 17:15:18,611 - model_training - INFO - __init__:37 - LoanEligibilityPredictor initialized with random_forest
+2025-08-15 17:15:18,613 - model_training - INFO - train_single_model:118 - Training logistic_regression model
+2025-08-15 17:15:18,739 - model_training - INFO - train_single_model:146 - logistic_regression - AUC-ROC: 0.999
+2025-08-15 17:15:18,739 - model_training - INFO - train_single_model:118 - Training random_forest model
+2025-08-15 17:15:20,691 - model_training - INFO - train_single_model:146 - random_forest - AUC-ROC: 1.000
+2025-08-15 17:15:20,691 - model_training - INFO - train_single_model:118 - Training xgboost model
+2025-08-15 17:15:20,995 - model_training - INFO - train_single_model:146 - xgboost - AUC-ROC: 1.000
+2025-08-15 17:15:20,997 - model_training - INFO - train_multiple_models:191 - Best model: random_forest
+2025-08-15 17:15:21,007 - model_training - INFO - train_single_model:118 - Training random_forest model
+2025-08-15 17:15:22,897 - model_training - INFO - train_single_model:146 - random_forest - AUC-ROC: 1.000
+2025-08-15 17:15:34,269 - model_training - INFO - __init__:37 - LoanEligibilityPredictor initialized with random_forest
+2025-08-15 17:15:34,272 - model_training - INFO - train_single_model:118 - Training logistic_regression model
+2025-08-15 17:15:34,388 - model_training - INFO - train_single_model:146 - logistic_regression - AUC-ROC: 0.999
+2025-08-15 17:15:34,388 - model_training - INFO - train_single_model:118 - Training random_forest model
+2025-08-15 17:15:36,257 - model_training - INFO - train_single_model:146 - random_forest - AUC-ROC: 1.000
+2025-08-15 17:15:36,257 - model_training - INFO - train_single_model:118 - Training xgboost model
+2025-08-15 17:15:36,559 - model_training - INFO - train_single_model:146 - xgboost - AUC-ROC: 1.000
+2025-08-15 17:15:36,561 - model_training - INFO - train_multiple_models:191 - Best model: random_forest
+2025-08-15 17:15:36,571 - model_training - INFO - train_single_model:118 - Training random_forest model
+2025-08-15 17:15:38,459 - model_training - INFO - train_single_model:146 - random_forest - AUC-ROC: 1.000
+2025-08-15 17:16:28,774 - model_training - INFO - __init__:37 - LoanEligibilityPredictor initialized with random_forest
+2025-08-15 17:16:28,775 - model_training - INFO - train_single_model:118 - Training logistic_regression model
+2025-08-15 17:16:28,896 - model_training - INFO - train_single_model:146 - logistic_regression - AUC-ROC: 0.999
+2025-08-15 17:16:28,896 - model_training - INFO - train_single_model:118 - Training random_forest model
+2025-08-15 17:16:30,806 - model_training - INFO - train_single_model:146 - random_forest - AUC-ROC: 1.000
+2025-08-15 17:16:30,807 - model_training - INFO - train_single_model:118 - Training xgboost model
+2025-08-15 17:16:31,131 - model_training - INFO - train_single_model:146 - xgboost - AUC-ROC: 1.000
+2025-08-15 17:16:31,133 - model_training - INFO - train_multiple_models:191 - Best model: random_forest
+2025-08-15 17:16:31,140 - model_training - INFO - train_single_model:118 - Training random_forest model
+2025-08-15 17:16:33,030 - model_training - INFO - train_single_model:146 - random_forest - AUC-ROC: 1.000
+2025-08-15 17:17:16,556 - model_training - INFO - evaluate_by_segment:343 - Evaluating model performance by segment
+2025-08-15 17:17:37,236 - model_training - INFO - __init__:32 - CustomerSegmentation initialized with kmeans algorithm
+2025-08-15 17:17:37,236 - model_training - INFO - __init__:37 - LoanEligibilityPredictor initialized with random_forest
+2025-08-15 17:17:37,357 - model_training - INFO - find_optimal_clusters:49 - Finding optimal clusters in range (2, 10)
+2025-08-15 17:17:37,357 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=2
+2025-08-15 17:17:38,000 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=3
+2025-08-15 17:17:38,615 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=4
+2025-08-15 17:17:39,180 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=5
+2025-08-15 17:17:39,736 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=6
+2025-08-15 17:17:40,392 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=7
+2025-08-15 17:17:41,054 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=8
+2025-08-15 17:17:41,717 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=9
+2025-08-15 17:17:42,359 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=10
+2025-08-15 17:17:42,953 - model_training - INFO - _determine_optimal_clusters:96 - Optimal clusters determined: 3
+2025-08-15 17:17:42,955 - model_training - INFO - fit:114 - Fitting kmeans with 3 clusters
+2025-08-15 17:17:43,503 - model_training - INFO - fit:138 - Clustering complete. Silhouette score: 0.277
+2025-08-15 17:17:43,519 - model_training - INFO - create_segment_profiles:167 - Creating segment profiles
+2025-08-15 17:17:43,519 - model_training - INFO - create_segment_profiles:194 - Created profiles for 3 segments
+2025-08-15 17:17:43,519 - model_training - INFO - prepare_data_with_segments:50 - Adding segment information to features
+2025-08-15 17:17:43,538 - model_training - INFO - handle_imbalanced_data:67 - Handling class imbalance using smote
+2025-08-15 17:17:43,540 - model_training - INFO - handle_imbalanced_data:71 - Original class distribution: {0: 13, 1: 3487}
+2025-08-15 17:17:43,567 - model_training - INFO - handle_imbalanced_data:79 - Balanced class distribution: {0: 3487, 1: 3487}
+2025-08-15 17:17:43,568 - model_training - INFO - train_single_model:118 - Training logistic_regression model
+2025-08-15 17:17:43,769 - model_training - INFO - train_single_model:146 - logistic_regression - AUC-ROC: 0.989
+2025-08-15 17:17:43,769 - model_training - INFO - train_single_model:118 - Training random_forest model
+2025-08-15 17:17:49,807 - model_training - INFO - train_single_model:146 - random_forest - AUC-ROC: 0.987
+2025-08-15 17:17:49,807 - model_training - INFO - train_single_model:118 - Training xgboost model
+2025-08-15 17:17:50,820 - model_training - INFO - train_single_model:146 - xgboost - AUC-ROC: 0.999
+2025-08-15 17:17:50,822 - model_training - INFO - train_multiple_models:191 - Best model: xgboost
+2025-08-15 17:17:50,837 - model_training - INFO - get_feature_importance:279 - Top 5 features: ['segment', 'loan_purpose_Personal', 'employment_type_Retired', 'occupation_Executive', 'loan_purpose_Debt Consolidation']
+2025-08-15 17:17:50,837 - model_training - INFO - evaluate_by_segment:343 - Evaluating model performance by segment
+2025-08-15 17:17:51,011 - model_training - INFO - save:327 - Segmentation model saved to ../models/segmenter.pkl
+2025-08-15 17:17:51,028 - model_training - INFO - save:376 - Prediction model saved to ../models/predictor.pkl
+2025-08-15 17:20:38,331 - model_training - INFO - __init__:32 - CustomerSegmentation initialized with kmeans algorithm
+2025-08-15 17:20:38,331 - model_training - INFO - find_optimal_clusters:49 - Finding optimal clusters in range (2, 10)
+2025-08-15 17:20:38,331 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=2
+2025-08-15 17:20:39,055 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=3
+2025-08-15 17:20:39,674 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=4
+2025-08-15 17:20:40,255 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=5
+2025-08-15 17:20:40,794 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=6
+2025-08-15 17:20:41,343 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=7
+2025-08-15 17:20:41,933 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=8
+2025-08-15 17:20:42,538 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=9
+2025-08-15 17:20:43,238 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=10
+2025-08-15 17:20:43,893 - model_training - INFO - _determine_optimal_clusters:96 - Optimal clusters determined: 3
+2025-08-15 17:20:43,903 - model_training - INFO - fit:114 - Fitting kmeans with 3 clusters
+2025-08-15 17:20:44,451 - model_training - INFO - fit:138 - Clustering complete. Silhouette score: 0.277
+2025-08-15 17:20:45,270 - model_training - INFO - __init__:37 - LoanEligibilityPredictor initialized with random_forest
+2025-08-15 17:20:45,271 - model_training - INFO - train_single_model:118 - Training logistic_regression model
+2025-08-15 17:20:45,365 - model_training - INFO - train_single_model:146 - logistic_regression - AUC-ROC: 0.999
+2025-08-15 17:20:45,376 - model_training - INFO - train_single_model:118 - Training random_forest model
+2025-08-15 17:20:47,216 - model_training - INFO - train_single_model:146 - random_forest - AUC-ROC: 1.000
+2025-08-15 17:20:47,216 - model_training - INFO - train_single_model:118 - Training xgboost model
+2025-08-15 17:20:47,657 - model_training - INFO - train_single_model:146 - xgboost - AUC-ROC: 1.000
+2025-08-15 17:20:47,659 - model_training - INFO - train_multiple_models:191 - Best model: random_forest
+2025-08-15 17:20:47,670 - model_training - INFO - train_single_model:118 - Training random_forest model
+2025-08-15 17:20:49,509 - model_training - INFO - train_single_model:146 - random_forest - AUC-ROC: 1.000
+2025-08-15 17:20:49,954 - model_training - INFO - evaluate_by_segment:343 - Evaluating model performance by segment
+2025-08-15 17:20:50,171 - model_training - INFO - __init__:32 - CustomerSegmentation initialized with kmeans algorithm
+2025-08-15 17:20:50,173 - model_training - INFO - __init__:37 - LoanEligibilityPredictor initialized with random_forest
+2025-08-15 17:20:50,276 - model_training - INFO - find_optimal_clusters:49 - Finding optimal clusters in range (2, 10)
+2025-08-15 17:20:50,277 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=2
+2025-08-15 17:20:50,805 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=3
+2025-08-15 17:20:51,345 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=4
+2025-08-15 17:20:51,900 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=5
+2025-08-15 17:20:52,406 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=6
+2025-08-15 17:20:52,974 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=7
+2025-08-15 17:20:53,558 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=8
+2025-08-15 17:20:54,360 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=9
+2025-08-15 17:20:55,065 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=10
+2025-08-15 17:20:55,643 - model_training - INFO - _determine_optimal_clusters:96 - Optimal clusters determined: 3
+2025-08-15 17:20:55,643 - model_training - INFO - fit:114 - Fitting kmeans with 3 clusters
+2025-08-15 17:20:56,211 - model_training - INFO - fit:138 - Clustering complete. Silhouette score: 0.277
+2025-08-15 17:20:56,211 - model_training - INFO - create_segment_profiles:167 - Creating segment profiles
+2025-08-15 17:20:56,231 - model_training - INFO - create_segment_profiles:194 - Created profiles for 3 segments
+2025-08-15 17:20:56,231 - model_training - INFO - prepare_data_with_segments:50 - Adding segment information to features
+2025-08-15 17:20:56,243 - model_training - INFO - handle_imbalanced_data:67 - Handling class imbalance using smote
+2025-08-15 17:20:56,244 - model_training - INFO - handle_imbalanced_data:71 - Original class distribution: {0: 13, 1: 3487}
+2025-08-15 17:20:56,252 - model_training - INFO - handle_imbalanced_data:79 - Balanced class distribution: {0: 3487, 1: 3487}
+2025-08-15 17:20:56,252 - model_training - INFO - train_single_model:118 - Training logistic_regression model
+2025-08-15 17:20:56,478 - model_training - INFO - train_single_model:146 - logistic_regression - AUC-ROC: 0.989
+2025-08-15 17:20:56,478 - model_training - INFO - train_single_model:118 - Training random_forest model
+2025-08-15 17:21:02,417 - model_training - INFO - train_single_model:146 - random_forest - AUC-ROC: 0.987
+2025-08-15 17:21:02,417 - model_training - INFO - train_single_model:118 - Training xgboost model
+2025-08-15 17:21:03,423 - model_training - INFO - train_single_model:146 - xgboost - AUC-ROC: 0.999
+2025-08-15 17:21:03,425 - model_training - INFO - train_multiple_models:191 - Best model: xgboost
+2025-08-15 17:21:03,428 - model_training - INFO - get_feature_importance:279 - Top 5 features: ['segment', 'loan_purpose_Personal', 'employment_type_Retired', 'occupation_Executive', 'loan_purpose_Debt Consolidation']
+2025-08-15 17:21:03,441 - model_training - INFO - evaluate_by_segment:343 - Evaluating model performance by segment
+2025-08-15 17:21:03,502 - model_training - INFO - save:327 - Segmentation model saved to ../models/segmenter.pkl
+2025-08-15 17:21:03,596 - model_training - INFO - save:376 - Prediction model saved to ../models/predictor.pkl
+2025-08-15 20:55:37,378 - model_training - INFO - __init__:32 - CustomerSegmentation initialized with kmeans algorithm
+2025-08-15 20:55:37,383 - model_training - INFO - find_optimal_clusters:49 - Finding optimal clusters in range (2, 10)
+2025-08-15 20:55:37,384 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=2
+2025-08-15 20:55:37,967 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=3
+2025-08-15 20:55:38,569 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=4
+2025-08-15 20:55:39,191 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=5
+2025-08-15 20:55:39,780 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=6
+2025-08-15 20:55:40,341 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=7
+2025-08-15 20:55:40,990 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=8
+2025-08-15 20:55:41,590 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=9
+2025-08-15 20:55:42,199 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=10
+2025-08-15 20:55:42,807 - model_training - INFO - _determine_optimal_clusters:96 - Optimal clusters determined: 3
+2025-08-15 20:55:42,810 - model_training - INFO - fit:114 - Fitting kmeans with 3 clusters
+2025-08-15 20:55:43,415 - model_training - INFO - fit:138 - Clustering complete. Silhouette score: 0.277
+2025-08-15 21:33:23,928 - model_training - INFO - __init__:32 - CustomerSegmentation initialized with kmeans algorithm
+2025-08-15 21:33:23,932 - model_training - INFO - find_optimal_clusters:49 - Finding optimal clusters in range (2, 10)
+2025-08-15 21:33:23,935 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=2
+2025-08-15 21:33:24,570 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=3
+2025-08-15 21:33:25,330 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=4
+2025-08-15 21:33:25,969 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=5
+2025-08-15 21:33:26,544 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=6
+2025-08-15 21:33:27,189 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=7
+2025-08-15 21:33:27,880 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=8
+2025-08-15 21:33:28,441 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=9
+2025-08-15 21:33:29,092 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=10
+2025-08-15 21:33:29,679 - model_training - INFO - _determine_optimal_clusters:96 - Optimal clusters determined: 3
+2025-08-15 21:45:36,316 - model_training - INFO - __init__:32 - CustomerSegmentation initialized with kmeans algorithm
+2025-08-15 21:45:36,319 - model_training - INFO - find_optimal_clusters:49 - Finding optimal clusters in range (2, 10)
+2025-08-15 21:45:36,321 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=2
+2025-08-15 21:45:36,922 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=3
+2025-08-15 21:45:37,496 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=4
+2025-08-15 21:45:38,171 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=5
+2025-08-15 21:45:38,777 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=6
+2025-08-15 21:45:39,387 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=7
+2025-08-15 21:45:39,999 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=8
+2025-08-15 21:45:40,617 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=9
+2025-08-15 21:45:41,252 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=10
+2025-08-15 21:45:41,969 - model_training - INFO - _determine_optimal_clusters:96 - Optimal clusters determined: 3
+2025-08-15 21:47:43,535 - model_training - INFO - __init__:32 - CustomerSegmentation initialized with kmeans algorithm
+2025-08-15 21:47:43,541 - model_training - INFO - find_optimal_clusters:49 - Finding optimal clusters in range (2, 10)
+2025-08-15 21:47:43,544 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=2
+2025-08-15 21:47:44,222 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=3
+2025-08-15 21:47:44,776 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=4
+2025-08-15 21:47:45,371 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=5
+2025-08-15 21:47:45,985 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=6
+2025-08-15 21:47:46,647 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=7
+2025-08-15 21:47:47,273 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=8
+2025-08-15 21:47:47,896 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=9
+2025-08-15 21:47:48,529 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=10
+2025-08-15 21:47:49,134 - model_training - INFO - _determine_optimal_clusters:96 - Optimal clusters determined: 3
+2025-08-15 21:49:47,969 - model_training - INFO - fit:114 - Fitting kmeans with 3 clusters
+2025-08-15 21:49:48,644 - model_training - INFO - fit:138 - Clustering complete. Silhouette score: 0.277
+2025-08-15 21:58:59,131 - model_training - INFO - fit:114 - Fitting kmeans with 3 clusters
+2025-08-15 21:58:59,751 - model_training - INFO - fit:138 - Clustering complete. Silhouette score: 0.277
+2025-08-15 22:01:15,700 - model_training - INFO - fit:114 - Fitting kmeans with 3 clusters
+2025-08-15 22:01:16,527 - model_training - INFO - fit:138 - Clustering complete. Silhouette score: 0.277
+2025-08-15 22:02:45,391 - model_training - INFO - fit:114 - Fitting kmeans with 3 clusters
+2025-08-15 22:02:46,023 - model_training - INFO - fit:138 - Clustering complete. Silhouette score: 0.277
+2025-08-16 00:54:46,002 - model_training - INFO - __init__:32 - CustomerSegmentation initialized with kmeans algorithm
+2025-08-16 00:54:46,009 - model_training - INFO - find_optimal_clusters:49 - Finding optimal clusters in range (2, 10)
+2025-08-16 00:54:46,010 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=2
+2025-08-16 00:54:51,823 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=3
+2025-08-16 00:54:57,007 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=4
+2025-08-16 00:55:02,162 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=5
+2025-08-16 00:55:07,520 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=6
+2025-08-16 00:55:12,294 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=7
+2025-08-16 00:55:17,309 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=8
+2025-08-16 00:55:22,216 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=9
+2025-08-16 00:55:27,576 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=10
+2025-08-16 00:55:33,023 - model_training - INFO - _determine_optimal_clusters:96 - Optimal clusters determined: 3
+2025-08-16 00:55:33,706 - model_training - INFO - fit:114 - Fitting kmeans with 3 clusters
+2025-08-16 00:55:38,830 - model_training - INFO - fit:138 - Clustering complete. Silhouette score: 0.263
+2025-08-16 00:55:44,946 - model_training - INFO - __init__:37 - LoanEligibilityPredictor initialized with random_forest
+2025-08-16 00:55:44,949 - model_training - INFO - train_single_model:118 - Training logistic_regression model
+2025-08-16 00:55:45,286 - model_training - INFO - train_single_model:146 - logistic_regression - AUC-ROC: 0.996
+2025-08-16 00:55:45,297 - model_training - INFO - train_single_model:118 - Training random_forest model
+2025-08-16 00:55:52,729 - model_training - INFO - train_single_model:146 - random_forest - AUC-ROC: 0.999
+2025-08-16 00:55:52,729 - model_training - INFO - train_single_model:118 - Training xgboost model
+2025-08-16 00:55:53,472 - model_training - INFO - train_single_model:146 - xgboost - AUC-ROC: 0.999
+2025-08-16 00:55:53,476 - model_training - INFO - train_multiple_models:191 - Best model: xgboost
+2025-08-16 00:55:53,491 - model_training - INFO - train_single_model:118 - Training xgboost model
+2025-08-16 00:55:54,256 - model_training - INFO - train_single_model:146 - xgboost - AUC-ROC: 0.999
+2025-08-16 00:55:55,071 - model_training - INFO - evaluate_by_segment:343 - Evaluating model performance by segment
+2025-08-16 00:55:55,603 - model_training - INFO - __init__:32 - CustomerSegmentation initialized with kmeans algorithm
+2025-08-16 00:55:55,603 - model_training - INFO - __init__:37 - LoanEligibilityPredictor initialized with random_forest
+2025-08-16 00:55:55,846 - model_training - INFO - find_optimal_clusters:49 - Finding optimal clusters in range (2, 10)
+2025-08-16 00:55:55,850 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=2
+2025-08-16 00:56:01,212 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=3
+2025-08-16 00:56:06,333 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=4
+2025-08-16 00:56:11,408 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=5
+2025-08-16 00:56:16,268 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=6
+2025-08-16 00:56:21,341 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=7
+2025-08-16 00:56:26,498 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=8
+2025-08-16 00:56:31,503 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=9
+2025-08-16 00:56:36,909 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=10
+2025-08-16 00:56:42,430 - model_training - INFO - _determine_optimal_clusters:96 - Optimal clusters determined: 3
+2025-08-16 00:56:42,431 - model_training - INFO - fit:114 - Fitting kmeans with 3 clusters
+2025-08-16 00:56:47,729 - model_training - INFO - fit:138 - Clustering complete. Silhouette score: 0.263
+2025-08-16 00:56:47,729 - model_training - INFO - create_segment_profiles:167 - Creating segment profiles
+2025-08-16 00:56:47,761 - model_training - INFO - create_segment_profiles:194 - Created profiles for 3 segments
+2025-08-16 00:56:47,761 - model_training - INFO - prepare_data_with_segments:50 - Adding segment information to features
+2025-08-16 00:56:47,788 - model_training - INFO - handle_imbalanced_data:67 - Handling class imbalance using smote
+2025-08-16 00:56:47,788 - model_training - INFO - handle_imbalanced_data:71 - Original class distribution: {0: 59, 1: 13941}
+2025-08-16 00:56:47,808 - model_training - INFO - handle_imbalanced_data:79 - Balanced class distribution: {0: 13941, 1: 13941}
+2025-08-16 00:56:47,808 - model_training - INFO - train_single_model:118 - Training logistic_regression model
+2025-08-16 00:56:49,081 - model_training - INFO - train_single_model:146 - logistic_regression - AUC-ROC: 0.995
+2025-08-16 00:56:49,081 - model_training - INFO - train_single_model:118 - Training random_forest model
+2025-08-16 00:57:14,894 - model_training - INFO - train_single_model:146 - random_forest - AUC-ROC: 0.986
+2025-08-16 00:57:14,896 - model_training - INFO - train_single_model:118 - Training xgboost model
+2025-08-16 00:57:17,130 - model_training - INFO - train_single_model:146 - xgboost - AUC-ROC: 1.000
+2025-08-16 00:57:17,132 - model_training - INFO - train_multiple_models:191 - Best model: xgboost
+2025-08-16 00:57:17,135 - model_training - INFO - get_feature_importance:279 - Top 5 features: ['risk_score', 'credit_score', 'payment_history_score', 'occupation_Clerical', 'occupation_Manual']
+2025-08-16 00:57:17,137 - model_training - INFO - evaluate_by_segment:343 - Evaluating model performance by segment
+2025-08-16 00:57:17,206 - model_training - INFO - save:327 - Segmentation model saved to ../models/segmenter.pkl
+2025-08-16 00:57:17,214 - model_training - INFO - save:376 - Prediction model saved to ../models/predictor.pkl
+2025-08-16 02:55:21,566 - model_training - INFO - __init__:32 - CustomerSegmentation initialized with kmeans algorithm
+2025-08-16 02:55:21,582 - model_training - INFO - find_optimal_clusters:49 - Finding optimal clusters in range (2, 10)
+2025-08-16 02:55:21,582 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=2
+2025-08-16 02:55:27,852 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=3
+2025-08-16 02:55:33,306 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=4
+2025-08-16 02:55:38,461 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=5
+2025-08-16 02:55:43,694 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=6
+2025-08-16 02:55:49,083 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=7
+2025-08-16 02:55:54,374 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=8
+2025-08-16 02:56:00,401 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=9
+2025-08-16 02:56:06,230 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=10
+2025-08-16 02:56:11,580 - model_training - INFO - _determine_optimal_clusters:96 - Optimal clusters determined: 3
+2025-08-16 02:56:12,256 - model_training - INFO - fit:114 - Fitting kmeans with 3 clusters
+2025-08-16 02:56:17,375 - model_training - INFO - fit:138 - Clustering complete. Silhouette score: 0.263
+2025-08-16 02:56:23,833 - model_training - INFO - __init__:37 - LoanEligibilityPredictor initialized with random_forest
+2025-08-16 02:56:23,860 - model_training - INFO - train_single_model:118 - Training logistic_regression model
+2025-08-16 02:56:24,293 - model_training - INFO - train_single_model:146 - logistic_regression - AUC-ROC: 0.996
+2025-08-16 02:56:24,295 - model_training - INFO - train_single_model:118 - Training random_forest model
+2025-08-16 02:56:31,836 - model_training - INFO - train_single_model:146 - random_forest - AUC-ROC: 0.999
+2025-08-16 02:56:31,847 - model_training - INFO - train_single_model:118 - Training xgboost model
+2025-08-16 02:56:32,550 - model_training - INFO - train_single_model:146 - xgboost - AUC-ROC: 0.999
+2025-08-16 02:56:32,552 - model_training - INFO - train_multiple_models:191 - Best model: xgboost
+2025-08-16 02:56:32,560 - model_training - INFO - train_single_model:118 - Training xgboost model
+2025-08-16 02:56:33,420 - model_training - INFO - train_single_model:146 - xgboost - AUC-ROC: 0.999
+2025-08-16 02:56:33,848 - model_training - INFO - evaluate_by_segment:343 - Evaluating model performance by segment
+2025-08-16 02:56:34,067 - model_training - INFO - __init__:32 - CustomerSegmentation initialized with kmeans algorithm
+2025-08-16 02:56:34,067 - model_training - INFO - __init__:37 - LoanEligibilityPredictor initialized with random_forest
+2025-08-16 02:56:34,274 - model_training - INFO - find_optimal_clusters:49 - Finding optimal clusters in range (2, 10)
+2025-08-16 02:56:34,276 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=2
+2025-08-16 02:56:39,268 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=3
+2025-08-16 02:56:44,388 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=4
+2025-08-16 02:56:49,226 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=5
+2025-08-16 02:56:54,245 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=6
+2025-08-16 02:56:59,135 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=7
+2025-08-16 02:57:04,439 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=8
+2025-08-16 02:57:09,980 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=9
+2025-08-16 02:57:15,733 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=10
+2025-08-16 02:57:21,223 - model_training - INFO - _determine_optimal_clusters:96 - Optimal clusters determined: 3
+2025-08-16 02:57:21,223 - model_training - INFO - fit:114 - Fitting kmeans with 3 clusters
+2025-08-16 02:57:26,427 - model_training - INFO - fit:138 - Clustering complete. Silhouette score: 0.263
+2025-08-16 02:57:26,427 - model_training - INFO - create_segment_profiles:167 - Creating segment profiles
+2025-08-16 02:57:26,467 - model_training - INFO - create_segment_profiles:194 - Created profiles for 3 segments
+2025-08-16 02:57:26,472 - model_training - INFO - prepare_data_with_segments:50 - Adding segment information to features
+2025-08-16 02:57:26,477 - model_training - INFO - handle_imbalanced_data:67 - Handling class imbalance using smote
+2025-08-16 02:57:26,477 - model_training - INFO - handle_imbalanced_data:71 - Original class distribution: {0: 59, 1: 13941}
+2025-08-16 02:57:26,510 - model_training - INFO - handle_imbalanced_data:79 - Balanced class distribution: {0: 13941, 1: 13941}
+2025-08-16 02:57:26,512 - model_training - INFO - train_single_model:118 - Training logistic_regression model
+2025-08-16 02:57:27,937 - model_training - INFO - train_single_model:146 - logistic_regression - AUC-ROC: 0.995
+2025-08-16 02:57:27,937 - model_training - INFO - train_single_model:118 - Training random_forest model
+2025-08-16 02:57:53,925 - model_training - INFO - train_single_model:146 - random_forest - AUC-ROC: 0.986
+2025-08-16 02:57:53,926 - model_training - INFO - train_single_model:118 - Training xgboost model
+2025-08-16 02:57:56,322 - model_training - INFO - train_single_model:146 - xgboost - AUC-ROC: 1.000
+2025-08-16 02:57:56,326 - model_training - INFO - train_multiple_models:191 - Best model: xgboost
+2025-08-16 02:57:56,330 - model_training - INFO - get_feature_importance:279 - Top 5 features: ['risk_score', 'credit_score', 'payment_history_score', 'occupation_Clerical', 'occupation_Manual']
+2025-08-16 02:57:56,330 - model_training - INFO - evaluate_by_segment:343 - Evaluating model performance by segment
+2025-08-16 02:57:56,500 - model_training - INFO - save:327 - Segmentation model saved to ../models/segmenter.pkl
+2025-08-16 02:57:56,511 - model_training - INFO - save:376 - Prediction model saved to ../models/predictor.pkl
+2025-08-16 02:59:03,575 - model_training - INFO - __init__:32 - CustomerSegmentation initialized with kmeans algorithm
+2025-08-16 02:59:03,575 - model_training - INFO - find_optimal_clusters:49 - Finding optimal clusters in range (2, 10)
+2025-08-16 02:59:03,575 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=2
+2025-08-16 02:59:08,762 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=3
+2025-08-16 02:59:14,033 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=4
+2025-08-16 02:59:19,324 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=5
+2025-08-16 02:59:24,400 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=6
+2025-08-16 02:59:29,742 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=7
+2025-08-16 02:59:35,029 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=8
+2025-08-16 02:59:40,131 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=9
+2025-08-16 02:59:45,582 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=10
+2025-08-16 02:59:50,991 - model_training - INFO - _determine_optimal_clusters:96 - Optimal clusters determined: 3
+2025-08-16 02:59:51,654 - model_training - INFO - fit:114 - Fitting kmeans with 3 clusters
+2025-08-16 02:59:56,959 - model_training - INFO - fit:138 - Clustering complete. Silhouette score: 0.263
+2025-08-16 03:00:03,277 - model_training - INFO - __init__:37 - LoanEligibilityPredictor initialized with random_forest
+2025-08-16 03:00:03,278 - model_training - INFO - train_single_model:118 - Training logistic_regression model
+2025-08-16 03:00:03,631 - model_training - INFO - train_single_model:146 - logistic_regression - AUC-ROC: 0.996
+2025-08-16 03:00:03,631 - model_training - INFO - train_single_model:118 - Training random_forest model
+2025-08-16 03:00:11,028 - model_training - INFO - train_single_model:146 - random_forest - AUC-ROC: 0.999
+2025-08-16 03:00:11,028 - model_training - INFO - train_single_model:118 - Training xgboost model
+2025-08-16 03:00:11,803 - model_training - INFO - train_single_model:146 - xgboost - AUC-ROC: 0.999
+2025-08-16 03:00:11,803 - model_training - INFO - train_multiple_models:191 - Best model: xgboost
+2025-08-16 03:00:11,816 - model_training - INFO - train_single_model:118 - Training xgboost model
+2025-08-16 03:00:12,703 - model_training - INFO - train_single_model:146 - xgboost - AUC-ROC: 0.999
+2025-08-16 03:00:13,162 - model_training - INFO - evaluate_by_segment:343 - Evaluating model performance by segment
+2025-08-16 03:00:13,420 - model_training - INFO - __init__:32 - CustomerSegmentation initialized with kmeans algorithm
+2025-08-16 03:00:13,421 - model_training - INFO - __init__:37 - LoanEligibilityPredictor initialized with random_forest
+2025-08-16 03:00:13,707 - model_training - INFO - find_optimal_clusters:49 - Finding optimal clusters in range (2, 10)
+2025-08-16 03:00:13,707 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=2
+2025-08-16 03:00:19,117 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=3
+2025-08-16 03:00:24,241 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=4
+2025-08-16 03:00:29,296 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=5
+2025-08-16 03:00:34,386 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=6
+2025-08-16 03:00:39,586 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=7
+2025-08-16 03:00:45,259 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=8
+2025-08-16 03:00:51,254 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=9
+2025-08-16 03:00:57,619 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=10
+2025-08-16 03:01:03,896 - model_training - INFO - _determine_optimal_clusters:96 - Optimal clusters determined: 3
+2025-08-16 03:01:03,896 - model_training - INFO - fit:114 - Fitting kmeans with 3 clusters
+2025-08-16 03:01:09,737 - model_training - INFO - fit:138 - Clustering complete. Silhouette score: 0.263
+2025-08-16 03:01:09,737 - model_training - INFO - create_segment_profiles:167 - Creating segment profiles
+2025-08-16 03:01:09,767 - model_training - INFO - create_segment_profiles:194 - Created profiles for 3 segments
+2025-08-16 03:01:09,767 - model_training - INFO - prepare_data_with_segments:50 - Adding segment information to features
+2025-08-16 03:01:09,795 - model_training - INFO - handle_imbalanced_data:67 - Handling class imbalance using smote
+2025-08-16 03:01:09,797 - model_training - INFO - handle_imbalanced_data:71 - Original class distribution: {0: 59, 1: 13941}
+2025-08-16 03:01:09,817 - model_training - INFO - handle_imbalanced_data:79 - Balanced class distribution: {0: 13941, 1: 13941}
+2025-08-16 03:01:09,817 - model_training - INFO - train_single_model:118 - Training logistic_regression model
+2025-08-16 03:01:11,294 - model_training - INFO - train_single_model:146 - logistic_regression - AUC-ROC: 0.995
+2025-08-16 03:01:11,295 - model_training - INFO - train_single_model:118 - Training random_forest model
+2025-08-16 03:01:39,396 - model_training - INFO - train_single_model:146 - random_forest - AUC-ROC: 0.986
+2025-08-16 03:01:39,396 - model_training - INFO - train_single_model:118 - Training xgboost model
+2025-08-16 03:01:41,785 - model_training - INFO - train_single_model:146 - xgboost - AUC-ROC: 1.000
+2025-08-16 03:01:41,787 - model_training - INFO - train_multiple_models:191 - Best model: xgboost
+2025-08-16 03:01:41,791 - model_training - INFO - get_feature_importance:279 - Top 5 features: ['risk_score', 'credit_score', 'payment_history_score', 'occupation_Clerical', 'occupation_Manual']
+2025-08-16 03:01:41,791 - model_training - INFO - evaluate_by_segment:343 - Evaluating model performance by segment
+2025-08-16 03:01:41,867 - model_training - INFO - save:327 - Segmentation model saved to ../models/segmenter.pkl
+2025-08-16 03:01:41,980 - model_training - INFO - save:376 - Prediction model saved to ../models/predictor.pkl
+2025-08-16 03:16:38,479 - model_training - INFO - __init__:32 - CustomerSegmentation initialized with kmeans algorithm
+2025-08-16 03:16:38,479 - model_training - INFO - find_optimal_clusters:49 - Finding optimal clusters in range (2, 10)
+2025-08-16 03:16:38,484 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=2
+2025-08-16 03:16:44,970 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=3
+2025-08-16 03:16:50,994 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=4
+2025-08-16 03:16:56,450 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=5
+2025-08-16 03:17:02,100 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=6
+2025-08-16 03:17:07,907 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=7
+2025-08-16 03:17:13,623 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=8
+2025-08-16 03:17:19,768 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=9
+2025-08-16 03:17:25,931 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=10
+2025-08-16 03:17:32,000 - model_training - INFO - _determine_optimal_clusters:96 - Optimal clusters determined: 3
+2025-08-16 03:17:32,916 - model_training - INFO - fit:114 - Fitting kmeans with 3 clusters
+2025-08-16 03:17:38,438 - model_training - INFO - fit:138 - Clustering complete. Silhouette score: 0.265
+2025-08-16 03:17:44,989 - model_training - INFO - __init__:37 - LoanEligibilityPredictor initialized with random_forest
+2025-08-16 03:17:44,992 - model_training - INFO - train_single_model:118 - Training logistic_regression model
+2025-08-16 03:17:45,329 - model_training - INFO - train_single_model:146 - logistic_regression - AUC-ROC: 0.990
+2025-08-16 03:17:45,329 - model_training - INFO - train_single_model:118 - Training random_forest model
+2025-08-16 03:17:53,416 - model_training - INFO - train_single_model:146 - random_forest - AUC-ROC: 1.000
+2025-08-16 03:17:53,416 - model_training - INFO - train_single_model:118 - Training xgboost model
+2025-08-16 03:17:54,059 - model_training - INFO - train_single_model:146 - xgboost - AUC-ROC: 0.997
+2025-08-16 03:17:54,061 - model_training - INFO - train_multiple_models:191 - Best model: random_forest
+2025-08-16 03:17:54,073 - model_training - INFO - train_single_model:118 - Training random_forest model
+2025-08-16 03:18:02,030 - model_training - INFO - train_single_model:146 - random_forest - AUC-ROC: 1.000
+2025-08-16 03:18:02,480 - model_training - INFO - evaluate_by_segment:343 - Evaluating model performance by segment
+2025-08-16 03:18:02,716 - model_training - INFO - __init__:32 - CustomerSegmentation initialized with kmeans algorithm
+2025-08-16 03:18:02,718 - model_training - INFO - __init__:37 - LoanEligibilityPredictor initialized with random_forest
+2025-08-16 03:18:02,957 - model_training - INFO - find_optimal_clusters:49 - Finding optimal clusters in range (2, 10)
+2025-08-16 03:18:02,962 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=2
+2025-08-16 03:18:08,658 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=3
+2025-08-16 03:18:15,259 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=4
+2025-08-16 03:18:21,057 - model_training - INFO - find_optimal_clusters:60 - Evaluating k=5

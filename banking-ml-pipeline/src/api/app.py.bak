@@ -25,7 +25,7 @@ app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16MB max file size
 
 # Import and register visualization blueprint
 try:
-    from api.visualization_endpoints_simple import viz_bp
+    from api.visualization_endpoints import viz_bp
     app.register_blueprint(viz_bp, url_prefix='/visualizations')
     api_logger.info("Visualization endpoints registered")
 except ImportError:
@@ -87,14 +87,14 @@ def welcome():
     </head>
     <body>
         <div class="container">
-            <h1>🏦 Banking ML Pipeline API</h1>
+            <h1>?? Banking ML Pipeline API</h1>
             <p>Welcome to the Banking ML Pipeline API. This system provides customer segmentation and loan eligibility prediction.</p>
             
-            <h2>📊 Visualization Options</h2>
+            <h2>?? Visualization Options</h2>
             <a href="/visualizations/segments/dashboard" class="button">Interactive Dashboard</a>
             <a href="/visualizations/segments/notebook" class="button">Notebook-style Viewer</a>
             
-            <h2>🔧 API Endpoints</h2>
+            <h2>?? API Endpoints</h2>
             
             <div class="endpoint">
                 <span class="method">GET</span> <span class="path">/health</span>
@@ -130,7 +130,7 @@ def welcome():
                 <a href="/feature_importance">Try it</a>
             </div>
             
-            <h2>📈 Visualization Endpoints</h2>
+            <h2>?? Visualization Endpoints</h2>
             
             <div class="endpoint">
                 <span class="method">GET</span> <span class="path">/visualizations/segments/dashboard</span>
@@ -162,7 +162,7 @@ def welcome():
                 <a href="/visualizations/segments/radar">View Image</a>
             </div>
             
-            <h2>📝 Note</h2>
+            <h2>?? Note</h2>
             <p>This API is currently using models trained on <strong>synthetic data</strong>. Performance metrics are preliminary and will improve with real production data.</p>
         </div>
     </body>

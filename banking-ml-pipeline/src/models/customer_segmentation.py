@@ -121,7 +121,9 @@ class CustomerSegmentation:
                 max_iter=config.get('segmentation.max_iter', 300)
             )
         elif self.algorithm == 'dbscan':
-            self.model = DBSCAN(eps=0.5, min_samples=5)
+            eps = getattr(self, 'eps', 0.5)
+            min_samples = getattr(self, 'min_samples', 5)
+            self.model = DBSCAN(eps=eps, min_samples=min_samples)
         elif self.algorithm == 'hierarchical':
             self.model = AgglomerativeClustering(n_clusters=n_clusters)
         else:
@@ -133,9 +135,26 @@ class CustomerSegmentation:
         if self.algorithm == 'kmeans':
             self.cluster_centers = self.model.cluster_centers_
         
-        # Calculate final metrics
-        silhouette = silhouette_score(X, labels)
-        model_logger.info(f"Clustering complete. Silhouette score: {silhouette:.3f}")
+        # Calculate final metrics only if we have enough clusters
+        try:
+            # For DBSCAN, exclude noise points (-1) when calculating silhouette score
+            if self.algorithm == 'dbscan':
+                mask = labels != -1
+                unique_clusters = len(set(labels[mask]))
+                if unique_clusters > 1:
+                    silhouette = silhouette_score(X[mask], labels[mask])
+                    model_logger.info(f"DBSCAN clustering complete. Found {unique_clusters} clusters, {(labels == -1).sum()} noise points. Silhouette score: {silhouette:.3f}")
+                else:
+                    model_logger.info(f"DBSCAN clustering complete. Found {unique_clusters} cluster(s), {(labels == -1).sum()} noise points. Cannot calculate silhouette score.")
+            else:
+                # For other algorithms
+                if len(set(labels)) > 1:
+                    silhouette = silhouette_score(X, labels)
+                    model_logger.info(f"Clustering complete. Silhouette score: {silhouette:.3f}")
+                else:
+                    model_logger.info(f"Clustering complete. Only 1 cluster found.")
+        except Exception as e:
+            model_logger.warning(f"Could not calculate silhouette score: {e}")
         
         return labels
     

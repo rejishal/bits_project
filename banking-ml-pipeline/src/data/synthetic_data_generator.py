@@ -26,13 +26,8 @@ def create_synthetic_banking_data(n_samples: int = 5000, random_state: int = 42)
     data['age'] = np.random.beta(5, 2, n_samples) * 62 + 18
     data['age'] = data['age'].astype(int)
     
-    # Income (correlated with age)
-    base_income = 25000
-    age_factor = (data['age'] - 18) / 62 * 50000
-    income_noise = np.random.lognormal(10.5, 0.6, n_samples)
-    data['income'] = base_income + age_factor + income_noise
-    data['income'] = data['income'].clip(15000, 500000).astype(int)
-    
+  
+
     # Education
     education_choices = []
     for age in data['age']:
@@ -56,6 +51,35 @@ def create_synthetic_banking_data(n_samples: int = 5000, random_state: int = 42)
     }
     data['occupation'] = data['education'].apply(lambda x: np.random.choice(occupation_map[x]))
     
+
+    # Income (correlated with age and occupation)
+    base_income = 25000
+    age_factor = (data['age'] - 18) / 62 * 50000
+
+    # Create occupation-based income multipliers
+    occupation_income_multipliers = {
+        'Executive': 8.0,
+        'Management': 4.0,
+        'Professional': 3.0,
+        'Consultant': 5.0,
+        'Academic': 2.0,
+        'Research': 3.0,
+        'Technical': 3.0,
+        'Sales': 1.2,
+        'Clerical': 0.9,
+        'Service': 0.8,
+        'Manual': 0.7
+    }
+
+    # Apply occupation multiplier
+    occupation_factor = data['occupation'].map(occupation_income_multipliers).fillna(1.0)
+    
+    # Generate income with all factors
+    income_noise = np.random.lognormal(10.5, 0.6, n_samples)
+    data['income'] = (base_income + age_factor) * occupation_factor + income_noise
+    data['income'] = data['income'].clip(15000, 500000).astype(int)
+    
+
     # Employment type
     employment_types = ['Full-time', 'Part-time', 'Self-employed', 'Retired', 'Student']
     employment_probs = []
@@ -183,15 +207,24 @@ def create_synthetic_banking_data(n_samples: int = 5000, random_state: int = 42)
     # Add customer ID
     data['customer_id'] = ['CUST' + str(i).zfill(6) for i in range(1, n_samples + 1)]
     
-    # Reorder columns
+        # Loan approval logic (add this before reordering columns)
+    approval_score = (
+        (data['credit_score'] > 650).astype(int) * 0.3 +
+        (data['income'] > 50000).astype(int) * 0.2 +
+        (data['previous_defaults'] == 0).astype(int) * 0.3 +
+        (data['payment_history_score'] > 0.7).astype(int) * 0.2
+    )
+    data['loan_approved'] = (approval_score > 0.5).astype(int)
+
+    # Reorder columns (add 'loan_approved' at the end)
     column_order = ['customer_id', 'age', 'income', 'education', 'occupation', 'employment_type',
                    'marital_status', 'dependents', 'account_age_months', 'num_products',
                    'avg_balance', 'max_balance', 'monthly_transactions', 'avg_transaction_amount',
                    'max_transaction_amount', 'digital_usage_rate', 'credit_score', 'existing_loans',
                    'previous_defaults', 'payment_history_score', 'loan_amount_requested',
                    'loan_term_months', 'loan_purpose', 'total_relationship_value',
-                   'risk_score', 'engagement_score']
-    
+                   'risk_score', 'engagement_score', 'loan_approved']
+
     data = data[column_order]
     
     print(f"Synthetic data created successfully with shape {data.shape}")

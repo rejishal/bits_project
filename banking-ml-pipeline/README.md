@@ -234,6 +234,54 @@ The pipeline expects the following features:
 
 ## 🤝 Contributing
 
+## 🔗 MLRun Integration (Optional MLOps)
+
+This project includes optional integration with [MLRun](https://www.mlrun.org/) for experiment tracking, reproducible runs, and artifact logging.
+
+### Handlers
+Implemented in `scripts/mlrun_handlers.py`:
+- `train_pipeline` – trains full pipeline, logs metrics and datasets
+- `load_and_predict` – loads saved pipeline and produces predictions
+
+### Install
+````bash
+pip install -r requirements.txt  # includes mlrun dependency
+````
+
+### Run a Training Job
+```python
+import mlrun
+fn = mlrun.code_to_function(name="banking_pipeline", filename="scripts/mlrun_handlers.py", kind="job")
+run = fn.run(handler="train_pipeline", params={"use_synthetic": True, "n_samples": 3000})
+print(run.outputs)
+```
+
+### Create & Use a Project
+```python
+import mlrun
+project = mlrun.get_or_create_project("banking-ml", context=".")
+project.set_function("scripts/mlrun_handlers.py", name="banking_pipeline", kind="job")
+run = project.run_function("banking_pipeline", handler="train_pipeline", params={"use_synthetic": True})
+```
+
+### CLI Example
+```bash
+mlrun run . -f scripts/mlrun_handlers.py -h train_pipeline -p use_synthetic=True -p n_samples=5000
+```
+
+### Logged Metrics & Artifacts
+- Classification: auc_roc, accuracy, precision, recall, f1_score, best_model
+- Segmentation: seg_n_clusters, seg_silhouette, segment_profiles dataset
+- Predictions dataset (from inference handler)
+
+Extend `_log_results_to_mlrun` in `scripts/mlrun_handlers.py` to push plots, feature importance, SHAP values, etc.
+
+### Next Ideas
+- Add SHAP explainability & log plots
+- Schedule periodic training runs
+- Add model drift detection handler
+
+
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)

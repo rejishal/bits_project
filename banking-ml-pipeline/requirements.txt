@@ -8,14 +8,18 @@ scikit-learn>=1.2,<1.7
 xgboost>=1.7.6
 imbalanced-learn>=0.8.1
 
+# Orchestration / MLOps
+mlrun>=1.6.0
+
 # Visualization
 matplotlib>=3.5.3
 seaborn>=0.11.2
 
 # API and Web
-flask==2.0.3
-flask-cors==3.0.10
-gunicorn==20.1.0
+flask>=3.0.0  # Latest Flask version (compatible with Werkzeug 3.x)
+werkzeug>=3.0.0  # Latest Werkzeug
+flask-cors>=4.0.0  # Latest flask-cors
+gunicorn
 
 # Utilities
 joblib>=1.1.0
@@ -40,9 +44,3 @@ isort==5.10.1
 # Monitoring and Logging
 prometheus-client>=0.14.1
 python-json-logger>=2.0.4
-
-# Optional: For advanced features
-# tensorflow==2.8.0  # For deep learning models
-# mlflow==1.26.1    # For experiment tracking
-# optuna==2.10.1    # For hyperparameter optimization
-# shap==0.41.0      # For model explainability

@@ -1,13 +1,13 @@
 {
-    "created_at": "2025-08-16T12:37:32.750871",
+    "created_at": "2025-08-26T15:28:25.110849",
     "version": "1.0.0",
-    "completed_at": "2025-08-16T12:37:45.751865",
+    "completed_at": "2025-08-26T15:28:43.712718",
     "results_summary": {
         "total_samples": 5000,
         "n_features_processed": 42,
-        "n_segments": 3,
-        "segmentation_quality": 0.09271993308218882,
+        "n_segments": 2,
+        "segmentation_quality": 0.09886367245064653,
         "best_prediction_model": "xgboost",
-        "prediction_auc_roc": 0.9949287149555066
+        "prediction_auc_roc": 0.9922084450402145
     }
 }

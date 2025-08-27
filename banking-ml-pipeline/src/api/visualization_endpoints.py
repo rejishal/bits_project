@@ -1,8 +1,9 @@
 # src/api/visualization_endpoints.py
 """Visualization endpoints for segmentation analysis"""
 
-from flask import Blueprint, jsonify, send_file, render_template_string
+from flask import Blueprint, config, jsonify, send_file, render_template_string
 import matplotlib
+from sklearn import pipeline
 matplotlib.use('Agg')  # Use non-interactive backend
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -158,8 +159,8 @@ DASHBOARD_TEMPLATE = """
 def segmentation_dashboard():
     """Interactive dashboard showing all segmentation visualizations"""
     try:
-        from ..pipeline.integrated_pipeline import IntegratedBankingPipeline
-        from ..utils.config import config
+        from src.pipeline.integrated_pipeline import IntegratedBankingPipeline
+        from src.utils.config import config
         
         # Load pipeline
         pipeline = IntegratedBankingPipeline()
@@ -218,6 +219,7 @@ def segmentation_dashboard():
         )
         
     except Exception as e:
+        return jsonify({'error': str(e)}), 500
 @viz_bp.route('/segments/notebook')
 def segmentation_notebook():
     """Notebook-style viewer for segmentation analysis"""
@@ -229,8 +231,8 @@ def segmentation_notebook():
             template = f.read()
         
         # Get data from pipeline
-        from ..pipeline.integrated_pipeline import IntegratedBankingPipeline
-        from ..utils.config import config
+        from src.pipeline.integrated_pipeline import IntegratedBankingPipeline
+        from src.utils.config import config
         
         pipeline = IntegratedBankingPipeline()
         pipeline.load_pipeline(config.get('paths.models_dir', 'models'))
@@ -306,8 +308,8 @@ def segmentation_notebook():
 def segment_pca_plot():
     """Generate PCA visualization of segments"""
     try:
-        from ..pipeline.integrated_pipeline import IntegratedBankingPipeline
-        from ..utils.config import config
+        from src.pipeline.integrated_pipeline import IntegratedBankingPipeline
+        from src.utils.config import config
         
         # Create figure
         fig, ax = plt.subplots(figsize=(10, 8))
@@ -315,7 +317,10 @@ def segment_pca_plot():
         # Generate sample data (replace with actual data)
         np.random.seed(42)
         n_samples = 1000
-        n_clusters = 5
+        pipeline = IntegratedBankingPipeline()
+        pipeline.load_pipeline(config.get('paths.models_dir', 'models'))
+        n_clusters = len(pipeline.segmenter.segment_profiles)
+        print(f"DEBUG: PCA visualization using {n_clusters} segments")
         
         # Create synthetic clustered data
         X = []
@@ -359,8 +364,8 @@ def segment_pca_plot():
 def segment_distribution():
     """Generate segment size distribution chart"""
     try:
-        from ..pipeline.integrated_pipeline import IntegratedBankingPipeline
-        from ..utils.config import config
+        from src.pipeline.integrated_pipeline import IntegratedBankingPipeline
+        from src.utils.config import config
         
         # Load pipeline
         pipeline = IntegratedBankingPipeline()
@@ -410,8 +415,8 @@ def segment_distribution():
 def segment_profiles():
     """Generate segment profile comparison"""
     try:
-        from ..pipeline.integrated_pipeline import IntegratedBankingPipeline
-        from ..utils.config import config
+        from src.pipeline.integrated_pipeline import IntegratedBankingPipeline
+        from src.utils.config import config
         
         # Load pipeline
         pipeline = IntegratedBankingPipeline()
@@ -483,8 +488,8 @@ def segment_profiles():
 def segment_radar_chart():
     """Generate radar chart for segment comparison"""
     try:
-        from ..pipeline.integrated_pipeline import IntegratedBankingPipeline
-        from ..utils.config import config
+        from src.pipeline.integrated_pipeline import IntegratedBankingPipeline
+        from src.utils.config import config
         import matplotlib.patches as patches
         
         # Load pipeline
@@ -505,7 +510,8 @@ def segment_radar_chart():
         angles += angles[:1]
         
         # Plot data for each segment
-        n_segments = 3  # Show top 3 segments for clarity
+        n_segments = min(len(pipeline.segmenter.segment_profiles), 3)  # Up to 3 segments for readability
+        print(f"DEBUG: Radar chart using {n_segments} segments out of {len(pipeline.segmenter.segment_profiles)}")
         colors = ['#FF6B6B', '#4ECDC4', '#45B7D1']
         
         for idx in range(n_segments):

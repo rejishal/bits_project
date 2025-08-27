@@ -2,6 +2,7 @@
 """Flask API for the Banking ML Pipeline"""
 
 from flask import Flask, request, jsonify
+from flask import send_from_directory
 import pandas as pd
 import numpy as np
 from functools import wraps
@@ -23,13 +24,30 @@ from utils.config import config
 app = Flask(__name__)
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16MB max file size
 
-# Import and register visualization blueprint
+""" # Import and register visualization blueprint
 try:
     from api.visualization_endpoints_simple import viz_bp
     app.register_blueprint(viz_bp, url_prefix='/visualizations')
     api_logger.info("Visualization endpoints registered")
 except ImportError:
-    api_logger.warning("Visualization endpoints not available")
+    api_logger.warning("Visualization endpoints not available")  """
+
+# With this:
+try:
+    # First try the full version
+    from api.visualization_endpoints import viz_bp
+    app.register_blueprint(viz_bp, url_prefix='/visualizations')
+    api_logger.info("Full visualization endpoints registered")
+except ImportError:
+    try:
+        # Fall back to simple version
+        from api.visualization_endpoints_simple import viz_bp
+        app.register_blueprint(viz_bp, url_prefix='/visualizations')
+        api_logger.info("Simple visualization endpoints registered")
+    except ImportError:
+        api_logger.warning("Visualization endpoints not available")
+
+
 
 # Load the pipeline
 pipeline = IntegratedBankingPipeline()
@@ -61,6 +79,21 @@ def handle_error(error):
         'error': 'Internal server error',
         'message': str(error)
     }), 500
+
+# Add these routes before your other routes
+@app.route('/favicon.ico')
+def favicon():
+    """Serve favicon to prevent 404 errors"""
+    return "", 204  # Return empty response with "No Content" status
+
+@app.errorhandler(404)
+def page_not_found(e):
+    """Handle 404 errors properly"""
+    api_logger.info(f"Page not found: {request.path}")
+    return jsonify({
+        'error': 'Not Found',
+        'message': f"The requested URL '{request.path}' was not found"
+    }), 404
 
 @app.route('/')
 def welcome():

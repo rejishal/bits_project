@@ -1,0 +1,34 @@
+name: Deploy Banking ML Application
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Kubernetes
+        uses: azure/setup-kubectl@v1
+        with:
+          version: 'latest'
+
+      - name: Configure Kubernetes context
+        run: |
+          kubectl config set-cluster my-cluster --server=${{ secrets.KUBE_SERVER }} --insecure-skip-tls-verify=true
+          kubectl config set-credentials my-user --token=${{ secrets.KUBE_TOKEN }}
+          kubectl config set-context my-context --cluster=my-cluster --user=my-user
+          kubectl config use-context my-context
+
+      - name: Deploy to Kubernetes
+        run: |
+          kubectl apply -k k8s/overlays/prod
+
+      - name: Verify deployment
+        run: |
+          kubectl rollout status deployment/banking-ml-deployment -n my-namespace

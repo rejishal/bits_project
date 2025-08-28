@@ -1,0 +1,53 @@
+pipeline {
+    agent any
+
+    environment {
+        DOCKER_IMAGE = 'your-docker-image-name'
+        DOCKER_REGISTRY = 'your-docker-registry-url'
+        K8S_NAMESPACE = 'your-k8s-namespace'
+    }
+
+    stages {
+        stage('Build') {
+            steps {
+                script {
+                    // Build the Docker image
+                    sh 'docker build -t $DOCKER_IMAGE .'
+                }
+            }
+        }
+
+        stage('Push') {
+            steps {
+                script {
+                    // Log in to Docker registry
+                    sh 'echo $DOCKER_PASSWORD | docker login $DOCKER_REGISTRY -u $DOCKER_USERNAME --password-stdin'
+                    // Push the Docker image
+                    sh 'docker push $DOCKER_IMAGE'
+                }
+            }
+        }
+
+        stage('Deploy to Kubernetes') {
+            steps {
+                script {
+                    // Set the Kubernetes context
+                    sh 'kubectl config use-context your-k8s-context'
+                    // Deploy the application
+                    sh 'kubectl apply -f k8s/base/deployment.yaml -n $K8S_NAMESPACE'
+                    sh 'kubectl apply -f k8s/base/service.yaml -n $K8S_NAMESPACE'
+                    sh 'kubectl apply -f k8s/base/ingress.yaml -n $K8S_NAMESPACE'
+                }
+            }
+        }
+    }
+
+    post {
+        success {
+            echo 'Deployment successful!'
+        }
+        failure {
+            echo 'Deployment failed!'
+        }
+    }
+}

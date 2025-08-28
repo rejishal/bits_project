@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: banking-ml-deployment
+  namespace: production
+spec:
+  template:
+    spec:
+      containers:
+        - name: banking-ml
+          image: your-docker-repo/banking-ml:latest
+          resources:
+            limits:
+              cpu: "500m"
+              memory: "512Mi"
+            requests:
+              cpu: "250m"
+              memory: "256Mi"
+          env:
+            - name: ENVIRONMENT
+              value: "production"
+            - name: DATABASE_URL
+              valueFrom:
+                secretKeyRef:
+                  name: db-secret
+                  key: url
+            - name: API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: api-secret
+                  key: key
+          ports:
+            - containerPort: 5000
+              name: http
+              protocol: TCP

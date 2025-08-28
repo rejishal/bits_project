@@ -1,0 +1,18 @@
+name: banking-ml
+version: 0.1.0
+description: A Helm chart for deploying the Banking Machine Learning application
+type: application
+maintainers:
+  - name: Your Name
+    email: your.email@example.com
+keywords:
+  - banking
+  - machine learning
+  - helm
+  - kubernetes
+home: https://example.com
+sources:
+  - https://github.com/your-repo/banking-ml-k8s
+dependencies: []
+icon: https://example.com/icon.png
+```

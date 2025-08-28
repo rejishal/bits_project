@@ -1,0 +1,40 @@
+name: banking-ml
+description: A Helm chart for deploying the Banking Machine Learning application
+version: 0.1.0
+appVersion: "1.0"
+
+replicaCount: 1
+
+image:
+  repository: your-docker-repo/banking-ml
+  pullPolicy: IfNotPresent
+  tag: latest
+
+service:
+  enabled: true
+  name: banking-ml
+  type: ClusterIP
+  port: 80
+  targetPort: 80
+  annotations: {}
+
+ingress:
+  enabled: false
+  name: ""
+  path: /
+  pathType: ImplementationSpecific
+  hosts:
+    - host: chart-example.local
+      paths:
+        - /
+  tls: []  # Treated as an array of objects
+  annotations: {}
+
+resources: {}
+# Limits and requests for CPU and memory can be specified here
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}

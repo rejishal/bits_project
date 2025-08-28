@@ -1,0 +1,6 @@
+resources:
+  - k8s/base
+  - k8s/overlays/dev
+  - k8s/overlays/prod
+
+namespace: banking-ml

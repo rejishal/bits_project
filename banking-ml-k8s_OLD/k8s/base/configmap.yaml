@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: banking-ml-config
+data:
+  DATABASE_URL: "your_database_url"
+  API_KEY: "your_api_key"
+  OTHER_CONFIG: "other_value"

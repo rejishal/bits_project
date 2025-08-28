@@ -1,0 +1,46 @@
+# Banking ML Pipeline - Requirements
+# Python 3.8+
+
+# Core ML Libraries
+numpy>=1.23
+pandas>=1.3.5
+scikit-learn>=1.2,<1.7
+xgboost>=1.7.6
+imbalanced-learn>=0.8.1
+
+# Orchestration / MLOps
+mlrun>=1.6.0
+
+# Visualization
+matplotlib>=3.5.3
+seaborn>=0.11.2
+
+# API and Web
+flask>=3.0.0  # Latest Flask version (compatible with Werkzeug 3.x)
+werkzeug>=3.0.0  # Latest Werkzeug
+flask-cors>=4.0.0  # Latest flask-cors
+gunicorn
+
+# Utilities
+joblib>=1.1.0
+pyyaml>=6.0
+python-dotenv>=0.19.2
+
+# Statistical Analysis
+scipy>=1.7.3
+statsmodels>=0.13.2
+
+# Testing
+pytest>=7.1.3
+pytest-cov>=3.0.0
+pytest-mock>=3.8.2
+
+# Development Tools
+black==22.3.0
+flake8==4.0.1
+mypy==0.961
+isort==5.10.1
+
+# Monitoring and Logging
+prometheus-client>=0.14.1
+python-json-logger>=2.0.4

@@ -1,0 +1,42 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: your-k8s-namespace
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: banking-ml-config
+  namespace: your-k8s-namespace
+data:
+  DATABASE_URL: "your-database-url"
+  API_KEY: "your-api-key"
+  OTHER_CONFIG: "your-other-config"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: banking-ml-deployment
+  namespace: your-k8s-namespace
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: banking-ml
+  template:
+    metadata:
+      labels:
+        app: banking-ml
+    spec:
+      containers:
+      - name: banking-ml
+        image: banking-ml:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 6000
+        env:
+        - name: API_KEY
+          valueFrom:
+            configMapKeyRef:
+              name: banking-ml-config
+              key: API_KEY

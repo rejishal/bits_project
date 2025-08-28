@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: banking-ml-deployment
+  labels:
+    app: banking-ml
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: banking-ml
+  template:
+    metadata:
+      labels:
+        app: banking-ml
+    spec:
+      containers:
+      - name: banking-ml
+        image: your-docker-repo/banking-ml:latest
+        ports:
+        - containerPort: 5000
+        env:
+        - name: ENVIRONMENT
+          value: "production"
+        - name: DATABASE_URL
+          valueFrom:
+            configMapKeyRef:
+              name: banking-ml-config
+              key: database_url
+        resources:
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+          requests:
+            memory: "256Mi"
+            cpu: "250m"

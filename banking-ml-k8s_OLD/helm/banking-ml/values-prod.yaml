@@ -1,0 +1,43 @@
+# Production-specific configuration values for the Helm chart
+
+replicaCount: 3
+
+image:
+  repository: your-docker-repo/banking-ml
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  enabled: true
+  name: banking-ml
+  type: ClusterIP
+  port: 80
+  targetPort: 80
+  annotations: {}
+
+ingress:
+  enabled: true
+  name: banking-ml-ingress
+  path: /
+  hosts:
+    - host: banking-ml.example.com
+      paths:
+        - /
+  tls:
+    - secretName: banking-ml-tls
+      hosts:
+        - banking-ml.example.com
+
+resources:
+  limits:
+    cpu: 500m
+    memory: 512Mi
+  requests:
+    cpu: 250m
+    memory: 256Mi
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}

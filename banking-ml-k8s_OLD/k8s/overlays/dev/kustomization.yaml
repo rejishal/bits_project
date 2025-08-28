@@ -1,0 +1,9 @@
+resources:
+  - ../../base
+  - patch-deployment.yaml
+
+configurations:
+  images:
+    - name: banking-ml
+      newName: your-docker-repo/banking-ml
+      newTag: latest

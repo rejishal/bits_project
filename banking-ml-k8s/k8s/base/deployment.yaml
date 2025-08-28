@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: banking-ml-deployment
+  namespace: your-k8s-namespace  # Added namespace
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: banking-ml
+  template:
+    metadata:
+      labels:
+        app: banking-ml
+    spec:
+      containers:
+      - name: banking-ml
+        image: banking-ml:latest
+        imagePullPolicy: Never  # Added for KIND
+        ports:
+        - containerPort: 6000
+        env:
+        - name: API_KEY  # Changed to match ConfigMap
+          valueFrom:
+            configMapKeyRef:
+              name: banking-ml-config  # Changed to actual ConfigMap name
+              key: API_KEY  # Changed to actual key
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "500m"
+          limits:
+            memory: "512Mi"
+            cpu: "1"
